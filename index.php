@@ -24,11 +24,11 @@
 		    height: 100%;
 		    content: "";
 		    position: absolute;
-		    left: .php;
-		    top: .php;
+		    left: 0;
+		    top: 0;
 		    pointer-events: none;
 		    z-index: 99;
-		    background: rgba(.php,.php,.php,.5);
+		    background: rgba(0,0,0,.5);
 		}
 		.slider-container .main-label {
 			line-height: 130px;
@@ -57,38 +57,38 @@
 							data-y="center" data-voffset="-95"
 							data-start="1000"
 							style="z-index: 5"
-							data-transform_in="x:[-300%];opacity:.php;s:500;"><img src="img/slides/slide-title-border.png" alt=""></div>
+							data-transform_in="x:[-300%];opacity:0;s:500;"><img src="img/slides/slide-title-border.png" alt=""></div>
 
 						<div class="tp-caption top-label"
-							data-x="center" data-hoffset=".php"
+							data-x="center" data-hoffset="0"
 							data-y="center" data-voffset="-95"
 							data-start="500"
 							style="z-index: 5;"
-							data-transform_in="y:[-300%];opacity:.php;s:500;">Estamos aqui para</div>
+							data-transform_in="y:[-300%];opacity:0;s:500;">Estamos aqui para</div>
 
 						<div class="tp-caption"
 							data-x="center" data-hoffset="150"
 							data-y="center" data-voffset="-95"
 							data-start="1000"
 							style="z-index: 5"
-							data-transform_in="x:[300%];opacity:.php;s:500;"><img src="img/slides/slide-title-border.png" alt=""></div>
+							data-transform_in="x:[300%];opacity:0;s:500;"><img src="img/slides/slide-title-border.png" alt=""></div>
 
 						<div class="tp-caption main-label"
-							data-x="center" data-hoffset=".php"
+							data-x="center" data-hoffset="0"
 							data-y="center" data-voffset="-45"
 							data-start="1500"
 							data-whitespace="nowrap"						 
 							data-transform_in="y:[100%];s:500;"
-							data-transform_out="opacity:.php;s:500;"
+							data-transform_out="opacity:0;s:500;"
 							style="z-index: 5"
 							data-mask_in="x:0px;y:0px;">Promover</div>
 
 						<div class="tp-caption bottom-label"
-							data-x="center" data-hoffset=".php"
+							data-x="center" data-hoffset="0"
 							data-y="center" data-voffset="5"
 							data-start="2000"
 							style="z-index: 5"
-							data-transform_in="y:[100%];opacity:.php;s:500;">cuidados com a vida.</div>
+							data-transform_in="y:[100%];opacity:0;s:500;">cuidados com a vida.</div>
 
 						
 					<li data-transition="fade">
@@ -104,38 +104,38 @@
 							data-y="center" data-voffset="-95"
 							data-start="1000"
 							style="z-index: 5"
-							data-transform_in="x:[-300%];opacity:.php;s:500;"><img src="img/slides/slide-title-border.png" alt=""></div>
+							data-transform_in="x:[-300%];opacity:0;s:500;"><img src="img/slides/slide-title-border.png" alt=""></div>
 
 						<div class="tp-caption top-label"
-							data-x="center" data-hoffset=".php"
+							data-x="center" data-hoffset="0"
 							data-y="center" data-voffset="-95"
 							data-start="500"
 							style="z-index: 5"
-							data-transform_in="y:[-300%];opacity:.php;s:500;">Comercializar</div>
+							data-transform_in="y:[-300%];opacity:0;s:500;">Comercializar</div>
 
 						<div class="tp-caption"
 							data-x="center" data-hoffset="150"
 							data-y="center" data-voffset="-95"
 							data-start="1000"
 							style="z-index: 5"
-							data-transform_in="x:[300%];opacity:.php;s:500;"><img src="img/slides/slide-title-border.png" alt=""></div>
+							data-transform_in="x:[300%];opacity:0;s:500;"><img src="img/slides/slide-title-border.png" alt=""></div>
 
 						<div class="tp-caption main-label"
-							data-x="center" data-hoffset=".php"
+							data-x="center" data-hoffset="0"
 							data-y="center" data-voffset="-45"
 							data-start="1500"
 							data-whitespace="nowrap"						 
 							data-transform_in="y:[100%];s:500;"
-							data-transform_out="opacity:.php;s:500;"
+							data-transform_out="opacity:0;s:500;"
 							style="z-index: 5"
 							data-mask_in="x:0px;y:0px;">Soluções</div>
 
 						<div class="tp-caption bottom-label"
-							data-x="center" data-hoffset=".php"
+							data-x="center" data-hoffset="0"
 							data-y="center" data-voffset="5"
 							data-start="2000"
 							style="z-index: 5"
-							data-transform_in="y:[100%];opacity:.php;s:500;">seguras, confiáveis e sustentáveis para a saúde.</div>
+							data-transform_in="y:[100%];opacity:0;s:500;">seguras, confiáveis e sustentáveis para a saúde.</div>
 
 					
 					<li data-transition="fade">
@@ -151,38 +151,38 @@
 							data-y="center" data-voffset="-95"
 							data-start="1000"
 							style="z-index: 5"
-							data-transform_in="x:[-300%];opacity:.php;s:500;"><img src="img/slides/slide-title-border.png" alt=""></div>
+							data-transform_in="x:[-300%];opacity:0;s:500;"><img src="img/slides/slide-title-border.png" alt=""></div>
 
 						<div class="tp-caption top-label"
-							data-x="center" data-hoffset=".php"
+							data-x="center" data-hoffset="0"
 							data-y="center" data-voffset="-95"
 							data-start="500"
 							style="z-index: 5"
-							data-transform_in="y:[-300%];opacity:.php;s:500;">Temos os melhores</div>
+							data-transform_in="y:[-300%];opacity:0;s:500;">Temos os melhores</div>
 
 						<div class="tp-caption"
 							data-x="center" data-hoffset="150"
 							data-y="center" data-voffset="-95"
 							data-start="1000"
 							style="z-index: 5"
-							data-transform_in="x:[300%];opacity:.php;s:500;"><img src="img/slides/slide-title-border.png" alt=""></div>
+							data-transform_in="x:[300%];opacity:0;s:500;"><img src="img/slides/slide-title-border.png" alt=""></div>
 
 						<div class="tp-caption main-label"
-							data-x="center" data-hoffset=".php"
+							data-x="center" data-hoffset="0"
 							data-y="center" data-voffset="-45"
 							data-start="1500"
 							data-whitespace="nowrap"						 
 							data-transform_in="y:[100%];s:500;"
-							data-transform_out="opacity:.php;s:500;"
+							data-transform_out="opacity:0;s:500;"
 							style="z-index: 5"
 							data-mask_in="x:0px;y:0px;">Equipamentos</div>
 
 						<div class="tp-caption bottom-label"
-							data-x="center" data-hoffset=".php"
+							data-x="center" data-hoffset="0"
 							data-y="center" data-voffset="5"
 							data-start="2000"
 							style="z-index: 5"
-							data-transform_in="y:[100%];opacity:.php;s:500;">do mundo.</div>
+							data-transform_in="y:[100%];opacity:0;s:500;">do mundo.</div>
 
 						
 					<li data-transition="fade">
@@ -198,38 +198,38 @@
 							data-y="center" data-voffset="-95"
 							data-start="1000"
 							style="z-index: 5"
-							data-transform_in="x:[-300%];opacity:.php;s:500;"><img src="img/slides/slide-title-border.png" alt=""></div>
+							data-transform_in="x:[-300%];opacity:0;s:500;"><img src="img/slides/slide-title-border.png" alt=""></div>
 
 						<div class="tp-caption top-label"
-							data-x="center" data-hoffset=".php"
+							data-x="center" data-hoffset="0"
 							data-y="center" data-voffset="-95"
 							data-start="500"
 							style="z-index: 5"
-							data-transform_in="y:[-300%];opacity:.php;s:500;">Nosso objetivo </div>
+							data-transform_in="y:[-300%];opacity:0;s:500;">Nosso objetivo </div>
 
 						<div class="tp-caption"
 							data-x="center" data-hoffset="150"
 							data-y="center" data-voffset="-95"
 							data-start="1000"
 							style="z-index: 5"
-							data-transform_in="x:[300%];opacity:.php;s:500;"><img src="img/slides/slide-title-border.png" alt=""></div>
+							data-transform_in="x:[300%];opacity:0;s:500;"><img src="img/slides/slide-title-border.png" alt=""></div>
 
 						<div class="tp-caption main-label"
-							data-x="center" data-hoffset=".php"
+							data-x="center" data-hoffset="0"
 							data-y="center" data-voffset="-45"
 							data-start="1500"
 							data-whitespace="nowrap"						 
 							data-transform_in="y:[100%];s:500;"
-							data-transform_out="opacity:.php;s:500;"
+							data-transform_out="opacity:0;s:500;"
 							style="z-index: 5"
 							data-mask_in="x:0px;y:0px;">Atingir</div>
 
 						<div class="tp-caption bottom-label"
-							data-x="center" data-hoffset=".php"
+							data-x="center" data-hoffset="0"
 							data-y="center" data-voffset="5"
 							data-start="2000"
 							style="z-index: 5"
-							data-transform_in="y:[100%];opacity:.php;s:500;">a excelência nos serviços prestados.</div>
+							data-transform_in="y:[100%];opacity:0;s:500;">a excelência nos serviços prestados.</div>
 
 				
 					<li data-transition="fade">
@@ -245,38 +245,38 @@
 							data-y="center" data-voffset="-95"
 							data-start="1000"
 							style="z-index: 5"
-							data-transform_in="x:[-300%];opacity:.php;s:500;"><img src="img/slides/slide-title-border.png" alt=""></div>
+							data-transform_in="x:[-300%];opacity:0;s:500;"><img src="img/slides/slide-title-border.png" alt=""></div>
 
 						<div class="tp-caption top-label"
-							data-x="center" data-hoffset=".php"
+							data-x="center" data-hoffset="0"
 							data-y="center" data-voffset="-95"
 							data-start="500"
 							style="z-index: 5"
-							data-transform_in="y:[-300%];opacity:.php;s:500;">Temos parceria com os</div>
+							data-transform_in="y:[-300%];opacity:0;s:500;">Temos parceria com os</div>
 
 						<div class="tp-caption"
 							data-x="center" data-hoffset="150"
 							data-y="center" data-voffset="-95"
 							data-start="1000"
 							style="z-index: 5"
-							data-transform_in="x:[300%];opacity:.php;s:500;"><img src="img/slides/slide-title-border.png" alt=""></div>
+							data-transform_in="x:[300%];opacity:0;s:500;"><img src="img/slides/slide-title-border.png" alt=""></div>
 
 						<div class="tp-caption main-label"
-							data-x="center" data-hoffset=".php"
+							data-x="center" data-hoffset="0"
 							data-y="center" data-voffset="-45"
 							data-start="1500"
 							data-whitespace="nowrap"						 
 							data-transform_in="y:[100%];s:500;"
-							data-transform_out="opacity:.php;s:500;"
+							data-transform_out="opacity:0;s:500;"
 							style="z-index: 5"
 							data-mask_in="x:0px;y:0px;">Melhores</div>
 
 						<div class="tp-caption bottom-label"
-							data-x="center" data-hoffset=".php"
+							data-x="center" data-hoffset="0"
 							data-y="center" data-voffset="5"
 							data-start="2000"
 							style="z-index: 5"
-							data-transform_in="y:[100%];opacity:.php;s:500;">fornecedores do mercado.</div>
+							data-transform_in="y:[100%];opacity:0;s:500;">fornecedores do mercado.</div>
 
 			
 					</div>
@@ -477,9 +477,9 @@
 					<div>
 						<img class="img-responsive" src="img/logos/logo-3.png" alt="">
 					</div>
-					<div>
+					<!-- <div>
 						<img class="img-responsive" src="img/logos/logo-4.png" alt="">
-					</div>
+					</div> -->
 					<div>
 						<img class="img-responsive" src="img/logos/logo-06.png" alt="">
 					</div>

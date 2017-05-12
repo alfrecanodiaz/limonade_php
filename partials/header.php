@@ -67,7 +67,7 @@
 												<li><a class="nav-page" href="parceiro3.php">Alfamed</a></li>
 												<li><a class="nav-page" href="parceiro2.php">Baumer</a></li>
 												<li><a class="nav-page" href="parceiro4.php">CDK</a></li>
-												<li><a class="nav-page" href="parceiro1.php">RC Móveis</a></li>
+												<!-- <li><a class="nav-page" href="parceiro1.php">RC Móveis</a></li> -->
 												<li><a class="nav-page" href="parceiro6.php">Bionext</a></li>
 											</ul>
 										</li>		

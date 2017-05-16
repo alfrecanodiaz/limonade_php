@@ -37,7 +37,7 @@
 		</section>
 
 		<!-- Google Maps - Go to the bottom of the page to change settings and map location. -->
-		<div id="googlemaps" class="google-map"></div>
+		<!-- <div id="googlemaps" class="google-map"></div> -->
 
 		<div class="container">
 
@@ -156,46 +156,46 @@
 		*/
 
 		// Map Markers
-		var mapMarkers = [{
-			address: "Gral. Abdón Caballero Nº 489 casi Ybyturusu Campo Grande - Luque",
-			html: "<strong>RD Medical S.A</strong><br>Luque - Paraguay",
-			icon: {
-				image: "img/pin.png",
-				iconsize: [26, 46],
-				iconanchor: [12, 46]
-			},
-			popup: true
-		}];
+		// var mapMarkers = [{
+		// 	address: "Gral. Abdón Caballero Nº 489 casi Ybyturusu Campo Grande - Luque",
+		// 	html: "<strong>RD Medical S.A</strong><br>Luque - Paraguay",
+		// 	icon: {
+		// 		image: "img/pin.png",
+		// 		iconsize: [26, 46],
+		// 		iconanchor: [12, 46]
+		// 	},
+		// 	popup: true
+		// }];
 
-		// Map Initial Location
-		var initLatitude = -25.287228;
-		var initLongitude = -57.5398179;
+		// // Map Initial Location
+		// var initLatitude = -25.287228;
+		// var initLongitude = -57.5398179;
 
-		// Map Extended Settings
-		var mapSettings = {
-			controls: {
-				draggable: (($.browser.mobile) ? false : true),
-				panControl: true,
-				zoomControl: true,
-				mapTypeControl: true,
-				scaleControl: true,
-				streetViewControl: true,
-				overviewMapControl: true
-			},
-			scrollwheel: false,
-			markers: mapMarkers,
-			latitude: initLatitude,
-			longitude: initLongitude,
-			zoom: 16
-		};
+		// // Map Extended Settings
+		// var mapSettings = {
+		// 	controls: {
+		// 		draggable: (($.browser.mobile) ? false : true),
+		// 		panControl: true,
+		// 		zoomControl: true,
+		// 		mapTypeControl: true,
+		// 		scaleControl: true,
+		// 		streetViewControl: true,
+		// 		overviewMapControl: true
+		// 	},
+		// 	scrollwheel: false,
+		// 	markers: mapMarkers,
+		// 	latitude: initLatitude,
+		// 	longitude: initLongitude,
+		// 	zoom: 16
+		// };
 
-		var map = $("#googlemaps").gMap(mapSettings);
+		// var map = $("#googlemaps").gMap(mapSettings);
 
-		// Map Center At
-		var mapCenterAt = function(options, e) {
-			e.preventDefault();
-			$("#googlemaps").gMap("centerAt", options);
-		}
+		// // Map Center At
+		// var mapCenterAt = function(options, e) {
+		// 	e.preventDefault();
+		// 	$("#googlemaps").gMap("centerAt", options);
+		// }
 
 	</script>
 

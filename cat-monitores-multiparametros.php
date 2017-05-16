@@ -85,7 +85,7 @@
 			<ul class="products product-thumb-info-list" data-plugin-masonry>
 				<!-- PRODUTO -->
 				<li class="col-md-3 col-sm-6 col-xs-12 product">
-					<a href="shop-product-sidebar.php">
+					<!-- <a href="shop-product-sidebar.php">
 						<span class="onsale">Novo!</span>
 					</a>
 					<span class="product-thumb-info">
@@ -107,12 +107,12 @@
 								</span>
 							</a>
 						</span>
-					</span>
+					</span> -->
 				</li>
 				<!-- FIM PRODUTO -->
 				<!-- PRODUTO -->
 				<li class="col-md-3 col-sm-6 col-xs-12 product">
-					<a href="shop-product-sidebar.php">
+					<!-- <a href="shop-product-sidebar.php">
 					</a>
 					<span class="product-thumb-info">
 						
@@ -133,12 +133,12 @@
 								</span>
 							</a>
 						</span>
-					</span>
+					</span> -->
 				</li>
 				<!-- FIM PRODUTO -->
 				<!-- PRODUTO -->
 				<li class="col-md-3 col-sm-6 col-xs-12 product">
-					<a href="shop-product-sidebar.php">
+					<!-- <a href="shop-product-sidebar.php">
 					</a>
 					<span class="product-thumb-info">
 						
@@ -160,7 +160,7 @@
 							</a>
 						</span>
 					</span>
-				</li>
+				</li> -->
 				<!-- FIM PRODUTO -->
 				
 			</ul>
@@ -182,7 +182,7 @@
 			<ul class="products product-thumb-info-list" data-plugin-masonry>
 				<!-- PRODUTO -->
 				<li class="col-md-3 col-sm-6 col-xs-12 product">
-					<a href="shop-product-sidebar.php">
+					<!-- <a href="shop-product-sidebar.php">
 						<span class="onsale">Novo!</span>
 					</a>
 					<span class="product-thumb-info">
@@ -204,12 +204,12 @@
 								</span>
 							</a>
 						</span>
-					</span>
+					</span> -->
 				</li>
 				<!-- FIM PRODUTO -->
 				<!-- PRODUTO -->
 				<li class="col-md-3 col-sm-6 col-xs-12 product">
-					<a href="shop-product-sidebar.php">
+					<!-- <a href="shop-product-sidebar.php">
 					</a>
 					<span class="product-thumb-info">
 						
@@ -230,12 +230,12 @@
 								</span>
 							</a>
 						</span>
-					</span>
+					</span> -->
 				</li>
 				<!-- FIM PRODUTO -->
 				<!-- PRODUTO -->
 				<li class="col-md-3 col-sm-6 col-xs-12 product">
-					<a href="shop-product-sidebar.php">
+					<!-- <a href="shop-product-sidebar.php">
 					</a>
 					<span class="product-thumb-info">
 						
@@ -256,7 +256,7 @@
 								</span>
 							</a>
 						</span>
-					</span>
+					</span> -->
 				</li>
 				<!-- FIM PRODUTO -->
 				
@@ -279,7 +279,7 @@
 			<ul class="products product-thumb-info-list" data-plugin-masonry>
 				<!-- PRODUTO -->
 				<li class="col-md-3 col-sm-6 col-xs-12 product">
-					<a href="shop-product-sidebar.php">
+					<!-- <a href="shop-product-sidebar.php">
 						<span class="onsale">Novo!</span>
 					</a>
 					<span class="product-thumb-info">
@@ -301,12 +301,12 @@
 								</span>
 							</a>
 						</span>
-					</span>
+					</span> -->
 				</li>
 				<!-- FIM PRODUTO -->
 				<!-- PRODUTO -->
 				<li class="col-md-3 col-sm-6 col-xs-12 product">
-					<a href="shop-product-sidebar.php">
+					<!-- <a href="shop-product-sidebar.php">
 					</a>
 					<span class="product-thumb-info">
 						
@@ -327,7 +327,7 @@
 								</span>
 							</a>
 						</span>
-					</span>
+					</span> -->
 				</li>
 				<!-- FIM PRODUTO -->
 			</ul>
@@ -349,7 +349,7 @@
 			<ul class="products product-thumb-info-list" data-plugin-masonry>
 				<!-- PRODUTO -->
 				<li class="col-md-3 col-sm-6 col-xs-12 product">
-					<a href="shop-product-sidebar.php">
+					<!-- <a href="shop-product-sidebar.php">
 						<span class="onsale">Novo!</span>
 					</a>
 					<span class="product-thumb-info">
@@ -371,12 +371,12 @@
 								</span>
 							</a>
 						</span>
-					</span>
+					</span> -->
 				</li>
 				<!-- FIM PRODUTO -->
 				<!-- PRODUTO -->
 				<li class="col-md-3 col-sm-6 col-xs-12 product">
-					<a href="shop-product-sidebar.php">
+					<!-- <a href="shop-product-sidebar.php">
 					</a>
 					<span class="product-thumb-info">
 						
@@ -397,7 +397,7 @@
 								</span>
 							</a>
 						</span>
-					</span>
+					</span> -->
 				</li>
 				<!-- FIM PRODUTO -->
 			</ul>

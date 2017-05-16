@@ -42,7 +42,11 @@
 			<div class="col-md-2">
 				<h4>Siga-nos</h4>
 				<ul class="social-icons">
-					<li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+					<li class="social-icons-facebook">
+						<a href="http://www.facebook.com/" target="_blank" title="Facebook" style="margin-left: 25px;">
+							<i class="fa fa-facebook fa-center"></i>
+						</a>
+					</li>
 					<!-- <li class="social-icons-instagram"><a href="http://www.instagram.com/" target="_blank" title="Instagram"><i class="fa fa-instagram"></i></a></li>
 					<li class="social-icons-linkedin"><a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i class="fa fa-linkedin"></i></a></li> -->
 				</ul>
@@ -52,9 +56,9 @@
 	<div class="footer-copyright">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-1">
+				<div class="col-md-2">
 					<a href="index.php" class="logo">
-						<img alt="RD Medical SRL" class="img-responsive" src="img/logo.png">
+						<img alt="RD Medical SRL" class="img-responsive" src="img/logo-footer.png">
 					</a>
 				</div>
 				<div class="col-md-7">
@@ -64,7 +68,7 @@
 					<nav id="sub-menu">
 						<ul>
 							
-							<li>Desenvolvido por <a href="http://pazzetto.com" target="_blank">Pazzetto.com</a></li>
+							<li>Desenvolvido por <a href="http://www.zentcode.com/" target="_blank">Zentcode</a></li>
 						</ul>
 					</nav>
 				</div>

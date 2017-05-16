@@ -85,11 +85,11 @@
 			<ul class="products product-thumb-info-list" data-plugin-masonry>
 				<!-- PRODUTO -->
 				<li class="col-md-3 col-sm-6 col-xs-12 product">
-					<a href="shop-product-sidebar.php">
+					<a href="">
 					</a>
 					<span class="product-thumb-info">
 						
-						<a href="shop-product-sidebar.php">
+						<a href="">
 							<span class="product-thumb-info-image">
 								<span class="product-thumb-info-act">
 									<span class="product-thumb-info-act-left"><em>Ver</em></span>
@@ -99,7 +99,7 @@
 							</span>
 						</a>
 						<span class="product-thumb-info-content">
-							<a href="shop-product-sidebar.php">
+							<a href="">
 								<h4>Conquest Vertex</h4>
 								<span class="price">
 									
@@ -111,11 +111,11 @@
 				<!-- FIM PRODUTO -->
 				<!-- PRODUTO -->
 				<li class="col-md-3 col-sm-6 col-xs-12 product">
-					<a href="shop-product-sidebar.php">
+					<a href="">
 					</a>
 					<span class="product-thumb-info">
 						
-						<a href="shop-product-sidebar.php">
+						<a href="">
 							<span class="product-thumb-info-image">
 								<span class="product-thumb-info-act">
 									<span class="product-thumb-info-act-left"><em>Ver</em></span>
@@ -125,7 +125,7 @@
 							</span>
 						</a>
 						<span class="product-thumb-info-content">
-							<a href="shop-product-sidebar.php">
+							<a href="">
 								<h4>SAB 2000</h4>
 								<span class="price">
 									
@@ -137,11 +137,11 @@
 				<!-- FIM PRODUTO -->
 				<!-- PRODUTO -->
 				<li class="col-md-3 col-sm-6 col-xs-12 product">
-					<a href="shop-product-sidebar.php">
+					<a href="">
 					</a>
 					<span class="product-thumb-info">
 						
-						<a href="shop-product-sidebar.php">
+						<a href="">
 							<span class="product-thumb-info-image">
 								<span class="product-thumb-info-act">
 									<span class="product-thumb-info-act-left"><em>Ver</em></span>
@@ -151,7 +151,7 @@
 							</span>
 						</a>
 						<span class="product-thumb-info-content">
-							<a href="shop-product-sidebar.php">
+							<a href="">
 								<h4>SAB 4000</h4>
 								<span class="price">
 									
@@ -177,11 +177,11 @@
 			<ul class="products product-thumb-info-list" data-plugin-masonry>
 				<!-- PRODUTO -->
 				<li class="col-md-3 col-sm-6 col-xs-12 product">
-					<a href="shop-product-sidebar.php">
+					<a href="">
 					</a>
 					<span class="product-thumb-info">
 						
-						<a href="shop-product-sidebar.php">
+						<a href="">
 							<span class="product-thumb-info-image">
 								<span class="product-thumb-info-act">
 									<span class="product-thumb-info-act-left"><em></em></span>
@@ -191,7 +191,7 @@
 							</span>
 						</a>
 						<span class="product-thumb-info-content">
-							<a href="shop-product-sidebar.php">
+							<a href="">
 								<h4>ETV-DM</h4>
 								<span class="price">
 									
@@ -203,11 +203,11 @@
 				<!-- FIM PRODUTO -->
 				<!-- PRODUTO -->
 				<li class="col-md-3 col-sm-6 col-xs-12 product">
-					<a href="shop-product-sidebar.php">
+					<a href="">
 					</a>
 					<span class="product-thumb-info">
 						
-						<a href="shop-product-sidebar.php">
+						<a href="">
 							<span class="product-thumb-info-image">
 								<span class="product-thumb-info-act">
 									<span class="product-thumb-info-act-left"><em></em></span>
@@ -217,7 +217,7 @@
 							</span>
 						</a>
 						<span class="product-thumb-info-content">
-							<a href="shop-product-sidebar.php">
+							<a href="">
 								<h4>ETV-QJ2</h4>
 								<span class="price">
 									
@@ -229,11 +229,11 @@
 				<!-- FIM PRODUTO -->
 				<!-- PRODUTO -->
 				<li class="col-md-3 col-sm-6 col-xs-12 product">
-					<a href="shop-product-sidebar.php">
+					<a href="">
 					</a>
 					<span class="product-thumb-info">
 						
-						<a href="shop-product-sidebar.php">
+						<a href="">
 							<span class="product-thumb-info-image">
 								<span class="product-thumb-info-act">
 									<span class="product-thumb-info-act-left"><em></em></span>
@@ -243,7 +243,7 @@
 							</span>
 						</a>
 						<span class="product-thumb-info-content">
-							<a href="shop-product-sidebar.php">
+							<a href="">
 								<h4>ETV</h4>
 								<span class="price">
 									
@@ -273,11 +273,11 @@
 			<ul class="products product-thumb-info-list" data-plugin-masonry>
 				<!-- PRODUTO -->
 				<li class="col-md-3 col-sm-6 col-xs-12 product">
-					<a href="shop-product-sidebar.php">
+					<a href="">
 					</a>
 					<span class="product-thumb-info">
 						
-						<a href="shop-product-sidebar.php">
+						<a href="">
 							<span class="product-thumb-info-image">
 								<span class="product-thumb-info-act">
 									<span class="product-thumb-info-act-left"><em></em></span>
@@ -287,7 +287,7 @@
 							</span>
 						</a>
 						<span class="product-thumb-info-content">
-							<a href="shop-product-sidebar.php">
+							<a href="">
 								<h4>Foco Cirúrgico LED - Quanta</h4>
 								<span class="price">
 									
@@ -299,11 +299,11 @@
 				<!-- FIM PRODUTO -->
 				<!-- PRODUTO -->
 				<li class="col-md-3 col-sm-6 col-xs-12 product">
-					<a href="shop-product-sidebar.php">
+					<a href="">
 					</a>
 					<span class="product-thumb-info">
 						
-						<a href="shop-product-sidebar.php">
+						<a href="">
 							<span class="product-thumb-info-image">
 								<span class="product-thumb-info-act">
 									<span class="product-thumb-info-act-left"><em></em></span>
@@ -313,7 +313,7 @@
 							</span>
 						</a>
 						<span class="product-thumb-info-content">
-							<a href="shop-product-sidebar.php">
+							<a href="">
 								<h4>Foco Cirúrgico - Centra</h4>
 								<span class="price">
 									
@@ -340,11 +340,11 @@
 			<ul class="products product-thumb-info-list" data-plugin-masonry>
 				<!-- PRODUTO -->
 				<li class="col-md-3 col-sm-6 col-xs-12 product">
-					<a href="shop-product-sidebar.php">
+					<a href="">
 					</a>
 					<span class="product-thumb-info">
 						
-						<a href="shop-product-sidebar.php">
+						<a href="">
 							<span class="product-thumb-info-image">
 								<span class="product-thumb-info-act">
 									<span class="product-thumb-info-act-left"><em></em></span>
@@ -354,7 +354,7 @@
 							</span>
 						</a>
 						<span class="product-thumb-info-content">
-							<a href="shop-product-sidebar.php">
+							<a href="">
 								<h4>Mesa Cirúrgica Radiotransparente Elétrica Atena A-500</h4>
 								<span class="price">
 									
@@ -366,11 +366,11 @@
 				<!-- FIM PRODUTO -->
 				<!-- PRODUTO -->
 				<li class="col-md-3 col-sm-6 col-xs-12 product">
-					<a href="shop-product-sidebar.php">
+					<a href="">
 					</a>
 					<span class="product-thumb-info">
 						
-						<a href="shop-product-sidebar.php">
+						<a href="">
 							<span class="product-thumb-info-image">
 								<span class="product-thumb-info-act">
 									<span class="product-thumb-info-act-left"><em></em></span>
@@ -380,7 +380,7 @@
 							</span>
 						</a>
 						<span class="product-thumb-info-content">
-							<a href="shop-product-sidebar.php">
+							<a href="">
 								<h4>Mesa Cirúrgica Radiotransparente Elétro Hidráulica Atena A-900</h4>
 								<span class="price">
 									

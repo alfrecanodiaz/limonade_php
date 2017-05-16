@@ -125,15 +125,20 @@ require_once('resources/core.php');
 	<script src="js/theme.js"></script>
 
 	<!-- Theme Custom -->
-	<script src="js/custom.js"></script>
+	<!-- <script src="js/custom.js"></script> -->
 
 	<!-- Theme Initialization Files -->
 	<script src="js/theme.init.js"></script>
 
+	<!-- Custom JS -->
+
 	<script type="text/javascript">
 		$(function()
 		{
-			$('a.nav-page[href="'+window.location.pathname.substr(1)+'"]').parent().closest('li.nav-li').addClass('active');
+			if (!window.location.pathname.substr(1) == '')
+				$('a.nav-page[href="'+window.location.pathname.substr(1)+'"]').parent().closest('li.nav-li').addClass('active');
+			else
+				$('a.nav-page[href="index.php"]').parent().closest('li.nav-li').addClass('active');
 		});
 	</script>
 

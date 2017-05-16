@@ -1,6 +1,6 @@
 <?php
 require_once('libs/ti.php');
-require_once('resources/core.php');
+require_once('core/controller.php');
 ?>
 <!DOCTYPE html>
 

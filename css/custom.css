@@ -1,1 +1,18 @@
 /* Add here all your CSS customizations */
+ul.portfolio-list .portfolio-item {
+	height: 300px !important;
+	min-height: 300px !important;
+	max-height: 300px !important;
+}
+
+ul.portfolio-list .thumb-info {
+	height: 300px !important;
+	min-height: 300px !important;
+	max-height: 300px !important;
+}
+
+ul.portfolio-list .thumb-info-wrapper {
+	height: 300px !important;
+	min-height: 300px !important;
+	max-height: 300px !important;
+}

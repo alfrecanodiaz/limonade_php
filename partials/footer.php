@@ -64,13 +64,10 @@
 				<div class="col-md-7">
 					<p>© Copyright 2017. Todos os direitos reservados.</p>
 				</div>
-				<div class="col-md-4">
-					<nav id="sub-menu">
-						<ul>
-							
-							<li>Desenvolvido por <a href="http://www.zentcode.com/" target="_blank">Zentcode</a></li>
-						</ul>
-					</nav>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center" style="margin-bottom: 2px;">
+					Desenvolvido por <a href="http://www.zentcode.com/" target="_blank">Zentcode</a>
 				</div>
 			</div>
 		</div>

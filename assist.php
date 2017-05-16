@@ -12,6 +12,13 @@
 
 <?php startblock('styles') ?>
 
+<style type="text/css">
+	.img-responsive {
+		height: 100%;
+		max-height: 100%;
+	}
+</style>
+
 <?php endblock() ?>
 
 <?php startblock('content') ?>

@@ -13,7 +13,7 @@
 <?php startblock('styles') ?>
 
 <style type="text/css">
-	.img-responsive {
+	.portfolio-item .img-responsive {
 		height: 100% !important;
 		max-height: 100% !important;
 	}

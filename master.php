@@ -130,8 +130,6 @@ require_once('core/controller.php');
 	<!-- Theme Initialization Files -->
 	<script src="js/theme.init.js"></script>
 
-	<!-- Custom JS -->
-
 	<script type="text/javascript">
 		$(function()
 		{

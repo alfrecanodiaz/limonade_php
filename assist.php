@@ -14,8 +14,8 @@
 
 <style type="text/css">
 	.img-responsive {
-		height: 100%;
-		max-height: 100%;
+		height: 100% !important;
+		max-height: 100% !important;
 	}
 </style>
 
@@ -179,8 +179,8 @@
 							</li>
 						</ul>
 
-						<h4 class="mt-xlg mb-none text-uppercase">Fluxo de <strong>Trabalho</strong></h4>
-						<img src="img/parceiro/fluxo.jpg" class="img-responsive" width="100%" alt="">
+						<!-- <h4 class="mt-xlg mb-none text-uppercase">Fluxo de <strong>Trabalho</strong></h4>
+						<img src="img/parceiro/fluxo.jpg" class="img-responsive" width="100%" alt=""> -->
 
 					</div>
 					

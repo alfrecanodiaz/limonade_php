@@ -17,8 +17,8 @@ body { background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAA
                     Desculpe, ocorreu um erro, Página pedida não encontrada!
                 </div>
                 <div class="error-actions">
-                    <a href="index.php" class="btn btn-primary btn-lg">Home</a>
-                    <a href="contact-us.php" class="btn btn-default btn-lg">Contato</a>
+                    <a href="index.php" class="btn">Home</a>
+                    <a href="contact-us.php" class="btn">Contato</a>
                 </div>
             </div>
         </div>

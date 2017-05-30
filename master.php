@@ -29,9 +29,9 @@ if ( isset( $_GET['lang'] ) )
 
 	<?php startblock('title') ?><?php endblock() ?>	
 
-	<meta name="keywords" content="HTML5 Template" />
-	<meta name="description" content="RD Medical SRL">
-	<meta name="author" content="okler.net">
+	<meta name="keywords" content="rd, medical" />
+	<meta name="description" content="RD Medical S.A.">
+	<meta name="author" content="zentcode.com">
 
 	<?php startblock('meta') ?><?php endblock() ?>
 

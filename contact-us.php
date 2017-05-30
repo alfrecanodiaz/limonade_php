@@ -129,7 +129,7 @@
 						<p>Acesse agora mesmo nosso <strong>catálogo</strong> e veja.</p>
 					</div>
 					<div class="call-to-action-btn">
-						<a href="solucoes.php" target="_blank" class="btn btn-lg btn-primary">Confira!</a><span class="arrow hlb hidden-xs hidden-sm hidden-md" data-appear-animation="rotateInUpLeft" style="top: -12px;"></span>
+						<a href="<?= get_url_page( 'solucoes' ); ?>" target="_blank" class="btn btn-lg btn-primary">Confira!</a><span class="arrow hlb hidden-xs hidden-sm hidden-md" data-appear-animation="rotateInUpLeft" style="top: -12px;"></span>
 					</div>
 				</div>
 			</div>

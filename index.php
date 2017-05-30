@@ -295,8 +295,8 @@
 					</div>
 					<div class="col-md-4">
 						<div class="get-started">
-							<a href="solucoes.php" class="btn btn-lg btn-primary">Veja agora!</a>
-							<div class="learn-more"><a href="solucoes.php"></a></div>
+							<a href="<?= get_url_page( 'solucoes' ); ?>" class="btn btn-lg btn-primary">Veja agora!</a>
+							<div class="learn-more"><a href="<?= get_url_page( 'solucoes' ); ?>"></a></div>
 						</div>
 					</div>
 				</div>
@@ -312,7 +312,7 @@
 						A <strong>RD Medical</strong> está há mais de 20 anos oferecendo soluções em cuidados para a saúde.
 					</h2>
 					<p class="lead">
-						Nossas soluções não se resumem apenas em fornecer, mas simplesmente compreender e tornar possível o acesso as melhores oportunidades que auxiliem equipes médicas a promover a saúde no Brasil.
+						<?= trans( 'prueba' ) ?>
 					</p>
 				</div>
 			</div>
@@ -505,7 +505,7 @@
 							<p>Saiba mais sobre as marcas, informações sobre os produtos, baixe os catálogos dos produtos.</p>
 						</div>
 						<div class="call-to-action-btn">
-							<a href="solucoes.php" target="" class="btn btn-lg btn-primary">Clique Aqui!</a><span class="arrow hlb hidden-xs hidden-sm hidden-md" data-appear-animation="rotateInUpLeft" style="top: -12px;"></span>
+							<a href="<?= get_url_page( 'solucoes' ); ?>" target="" class="btn btn-lg btn-primary">Clique Aqui!</a><span class="arrow hlb hidden-xs hidden-sm hidden-md" data-appear-animation="rotateInUpLeft" style="top: -12px;"></span>
 						</div>
 					</div>
 				</div>

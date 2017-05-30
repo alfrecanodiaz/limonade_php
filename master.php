@@ -1,6 +1,21 @@
 <?php
-require_once('libs/ti.php');
-require_once('core/controller.php');
+require( 'libs/ti.php' );
+require( 'core/controller.php' );
+$trans = require( 'resources/lang/po.php' );
+require( 'core/error-not-found.php' );
+
+if ( isset( $_GET['lang'] ) )
+{
+	$lang = sanitize_param( $_GET['lang'] );
+
+	if ( $lang == 'en' )
+		$trans = array_merge( $trans, require( 'resources/lang/en.php' ) );
+	elseif ( $lang == 'es' )
+		$trans = array_merge( $trans, require( 'resources/lang/es.php' ) );
+	else
+		$trans = array_merge( $trans, require( 'resources/lang/po.php' ) );
+}
+
 ?>
 <!DOCTYPE html>
 

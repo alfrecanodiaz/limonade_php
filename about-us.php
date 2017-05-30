@@ -84,7 +84,7 @@
 				</p>
 			</div>
 			<div class="col-md-2">
-				<a href="assist.php" class="btn btn-lg btn-primary mt-xl">Veja mais!</a>
+				<a href="<?= get_url_page( 'assist' ); ?>" class="btn btn-lg btn-primary mt-xl">Veja mais!</a>
 			</div>
 		</div>
 		<div class="row">

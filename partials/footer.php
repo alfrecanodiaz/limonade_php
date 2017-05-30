@@ -57,7 +57,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-2">
-					<a href="index.php" class="logo">
+					<a href="<?= get_url_page( 'index' ); ?>" class="logo">
 						<img alt="RD Medical SRL" class="img-responsive" src="img/logo-footer.png">
 					</a>
 				</div>

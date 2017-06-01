@@ -77,9 +77,9 @@ function set_lang( $lang ) {
 	}
 }
 
-function is_valid_lang( $val ) {
+function is_valid_lang( $lang ) {
 	$valid_lang = array( 'en', 'es', 'po' );
-	if ( in_array( $val, $valid_lang ) )
+	if ( in_array( $lang, $valid_lang ) )
 		return true;
 	else
 		return false;

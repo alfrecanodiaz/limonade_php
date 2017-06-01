@@ -5,7 +5,7 @@ require( 'core/controller.php' );
 $trans = require( 'resources/lang/po.php' );
 require( 'core/error-not-found.php' );
 
-if ( isset( $_GET['lang'] ) ) {
+if ( isset( $_GET[ 'lang' ] ) ) {
 	$lang = sanitize_param( $_GET[ 'lang' ] );
 
 	if ( is_valid_lang( $lang ) ) {

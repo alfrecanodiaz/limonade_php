@@ -24,9 +24,8 @@ function remove_extension( $param ) {
 }
 
 function get_url_page( $page ) {
-	if ( isset( $_GET['lang'] ) ) {
-		$lang = sanitize_param( $_GET['lang'] );
-		return $page . '.php' . '?lang=' . $lang;
+	if ( isset( $_SESSION[ "lang" ] ) ) {
+		return $page . '.php' . '?lang=' . $_SESSION[ "lang" ];
 	} else {
 		return $page . '.php';
 	}
@@ -41,9 +40,8 @@ function locate( $uri, $lang ) {
 
 function get_current_flag() {
 	$flag = 'br';
-	if ( isset( $_GET['lang'] ) ) {
-		$lang = sanitize_param( $_GET['lang'] );
-		switch ($lang) {
+	if ( isset( $_SESSION[ "lang" ] ) ) {
+		switch ( $_SESSION[ "lang" ] ) {
 			case 'es':
 				$flag = 'es';
 				break;
@@ -57,9 +55,8 @@ function get_current_flag() {
 
 function get_current_lang() {
 	$language = 'Português';
-	if ( isset( $_GET['lang'] ) ) {
-		$lang = sanitize_param( $_GET['lang'] );
-		switch ($lang) {
+	if ( isset( $_SESSION[ "lang" ] ) ) {
+		switch ( $_SESSION[ "lang" ] ) {
 			case 'es':
 				$language = 'Español';
 				break;
@@ -69,6 +66,23 @@ function get_current_lang() {
 		}
 	}
 	return $language;
+}
+
+function set_lang( $lang ) {
+	if ( isset( $_SESSION[ "lang" ] ) ) {
+		if ( $_SESSION[ "lang" ] != $lang )
+			$_SESSION[ "lang" ] = $lang;
+	} else {
+		$_SESSION[ "lang" ] = $lang;
+	}
+}
+
+function is_valid_lang( $val ) {
+	$valid_lang = array( 'en', 'es', 'po' );
+	if ( in_array( $val, $valid_lang ) )
+		return true;
+	else
+		return false;
 }
 
 function dd( $arg ) {

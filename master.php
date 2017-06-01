@@ -1,19 +1,19 @@
 <?php
+session_start();
 require( 'libs/ti.php' );
 require( 'core/controller.php' );
 $trans = require( 'resources/lang/po.php' );
 require( 'core/error-not-found.php' );
 
-if ( isset( $_GET['lang'] ) )
-{
-	$lang = sanitize_param( $_GET['lang'] );
+if ( isset( $_GET['lang'] ) ) {
+	$lang = sanitize_param( $_GET[ 'lang' ] );
 
-	if ( $lang == 'en' )
-		$trans = array_merge( $trans, require( 'resources/lang/en.php' ) );
-	elseif ( $lang == 'es' )
-		$trans = array_merge( $trans, require( 'resources/lang/es.php' ) );
-	else
-		$trans = array_merge( $trans, require( 'resources/lang/po.php' ) );
+	if ( is_valid_lang( $lang ) ) {
+		set_lang( $lang );
+		$trans = array_merge( $trans, require( 'resources/lang/'. $lang .'.php' ) );
+	}
+} else if ( isset( $_SESSION[ "lang" ] ) ) {
+	$trans = array_merge( $trans, require( 'resources/lang/'. $_SESSION[ "lang" ] .'.php' ) );
 }
 
 ?>

@@ -16,3 +16,37 @@ ul.portfolio-list .thumb-info-wrapper {
 	min-height: 300px !important;
 	max-height: 300px !important;
 }
+
+#footer .footer-copyright {
+	border-top: none;
+    background: #3a3c41;
+    // background: #6d6e71;
+}
+
+.footer-top p {
+	color: #6a7177;
+	// color: #9ba0aa;
+}
+
+.footer-top a {
+	color: #6a7177 !important;	
+}
+
+#footer {
+	color: #9ba0aa;
+	border-top: none;
+    // background: #6d6e71;
+    background: #f0f5f7;
+}
+
+#footer .footer-copyright p {
+    color: #9ba0aa;
+}
+
+#footer h1, #footer h2, #footer h3, #footer h4 {
+    color: #3a3c41;
+}
+
+.home-intro {
+    background-color: #3a3c41;
+}

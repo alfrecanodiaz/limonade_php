@@ -5,7 +5,7 @@ $uri = "$_SERVER[REQUEST_URI]";
 
 function trans( $name ) {
     global $trans;
-    return $trans[$name];
+    return $trans[ $name ];
 }
 
 function sanitize_param( $param ) {
@@ -79,10 +79,7 @@ function set_lang( $lang ) {
 
 function is_valid_lang( $lang ) {
 	$valid_lang = array( 'en', 'es', 'po' );
-	if ( in_array( $lang, $valid_lang ) )
-		return true;
-	else
-		return false;
+	return in_array( $lang, $valid_lang );
 }
 
 function dd( $arg ) {

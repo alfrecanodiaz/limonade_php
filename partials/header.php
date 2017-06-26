@@ -14,12 +14,12 @@
 						
 						<nav class="header-nav-top">
 							<ul class="nav nav-pills">
-								<li class="hidden-xs">
+								<!-- <li class="hidden-xs">
 									<a href="<?= get_url_page( 'about-us' ); ?>"><i class="fa fa-angle-right"></i> Sobre Nós</a>
-								</li>
-								<li class="hidden-xs">
+								</li> -->
+								<!-- <li class="hidden-xs">
 									<a href="<?= get_url_page( 'contact-us' ); ?>"><i class="fa fa-angle-right"></i> Entre em contato</a>
-								</li>
+								</li> -->
 								<li>
 									<span class="ws-nowrap"><i class="fa fa-phone"></i> (+595) 994 847395</span>
 								</li>
@@ -74,9 +74,9 @@
 												Parceiros
 											</a>
 											<ul class="dropdown-menu">
-												<li><a class="nav-page" href="<?= get_url_page( 'parceiro3' ); ?>">Alfamed</a></li>
+												<!-- <li><a class="nav-page" href="<?= get_url_page( 'parceiro3' ); ?>">Alfamed</a></li> -->
 												<li><a class="nav-page" href="<?= get_url_page( 'parceiro2' ); ?>">Baumer</a></li>
-												<li><a class="nav-page" href="<?= get_url_page( 'parceiro4' ); ?>">CDK</a></li>
+												<!-- <li><a class="nav-page" href="<?= get_url_page( 'parceiro4' ); ?>">CDK</a></li> -->
 												<!-- <li><a class="nav-page" href="parceiro1.php">RC Móveis</a></li> -->
 												<li><a class="nav-page" href="<?= get_url_page( 'parceiro6' ); ?>">Bionext</a></li>
 											</ul>
@@ -85,9 +85,9 @@
 										<li class="nav-li">
 											<a class="nav-page" href="<?= get_url_page( 'assist' ); ?>">Assistência Técnica</a>
 										</li>
-										<li class="nav-li">
+										<!-- <li class="nav-li">
 											<a class="nav-page" href="<?= get_url_page( 'blog' ); ?>">Blog</a>
-										</li>
+										</li> -->
 										<li class="nav-li">
 											<a class="nav-page" href="<?= get_url_page( 'contact-us' ); ?>">Contato</a>
 										</li>

@@ -36,7 +36,7 @@
 		</div>
 	</section>
 
-	<div class="container">
+	<div class="container" style="text-align: justify !important;">
 		<div class="row">
 			<div class="col-md-4">
 				
@@ -60,11 +60,13 @@
 
 				<p>Além do domínio tecnológico do processo, bem como pedidos de patentes pendentes no Brasil e no resto do mundo, a Bionext®, a partir de cepa selecionada, já está produzindo em larga escala, tendo desenvolvido por conta própria diversos equipamentos necessários para a fabricação e processamento final dos produtos resultantes.</p>
 
+				<p>A Bionext® dispõe de laboratórios próprios para Controle de Qualidade e Pesquisa & Desenvolvimento, funcionando em caráter permanente.</p>
+
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-md-12">
-				<p>A Bionext® dispõe de laboratórios próprios para Controle de Qualidade e Pesquisa & Desenvolvimento, funcionando em caráter permanente.</p>
+				<!-- <p>A Bionext® dispõe de laboratórios próprios para Controle de Qualidade e Pesquisa & Desenvolvimento, funcionando em caráter permanente.</p> -->
 
 				<p>Para o credenciamento dos produtos Bionext® nos principais mercados externos, a fábrica foi projetada para operar com a observância dos requerimentos do GMP (Good Manufacturing Practices), cujos critérios constituem base para definir a aprovação por parte do FDA americano (Food and Drug Administration), órgão responsável pela normatização e controle de produtos farmacêuticos e alimentares nos Estados Unidos.</p>
 
@@ -72,7 +74,8 @@
 			</div>
 		</div>
 
-		<div class="col-md-12">
+		<div class="row">
+			<div class="col-md-12">
 
 				<h4 class="heading-primary">Descrição</h4>
 
@@ -89,7 +92,7 @@
 
 				<p>Quando estas características são comparadas as definidas como do “curativo ideal”, concluímos que o bionext® é virtualmente o único produto que inclui todas as qualidades desejadas.</p>
 
-				<h4 class="heading-primary">Vantagens e Benefícios</h4>
+<!-- 				<h4 class="heading-primary">Vantagens e Benefícios</h4>
 
 				<img src="img/parceiro/vantagens.jpg" class="img-responsive" width="100%" alt="">
 				<br>
@@ -101,11 +104,25 @@
 
 				<h4 class="heading-primary">Tamanhos e Quantidades</h4>
 
-				<img src="img/parceiro/tabela.jpg" class="img-responsive" width="100%" alt="">
+				<img src="img/parceiro/tabela.jpg" class="img-responsive" width="100%" alt=""> -->
 
-				</div>
 			</div>
 		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="col-md-4">
+					<img src="img/parceiro/tecido-modif.png" class="img-responsive" alt="" style="width:100%;height:100%;">
+				</div>
+				<div class="col-md-8">
+					<img src="img/parceiro/bionext-grid.png" class="img-responsive" alt="">
+				</div>
+			</div>
+			<div class="col-md-12">
+				<img src="img/parceiro/table.png" class="img-responsive" alt="" style="display:block;margin:auto;width:100%;height:auto;">
+			</div>
+		</div>
+	</div>
+</div>
 
 		<div class="row">
 			<div class="col-md-12">
@@ -117,7 +134,7 @@
 
 	
 
-	<div class="container">
+<!-- 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
 						
@@ -149,7 +166,7 @@
 					
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 </div>
 

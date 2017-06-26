@@ -301,6 +301,14 @@
 					</div>
 				</div>
 
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<button id="scroll-down" style="background: none !important; border:none !important;">
+							<i class="fa fa-chevron-down" style="color: white; font-size: 35px;"></i>
+						</button>
+					</div>
+				</div>
+
 			</div>
 		</div>
 
@@ -471,12 +479,12 @@
 					<div>
 						<img class="img-responsive" src="img/logos/logo-1.png" alt="">
 					</div>
-					<div>
+					<!-- <div>
 						<img class="img-responsive" src="img/logos/logo-2.png" alt="">
-					</div>
-					<div>
+					</div> -->
+					<!-- <div>
 						<img class="img-responsive" src="img/logos/logo-3.png" alt="">
-					</div>
+					</div> -->
 					<!-- <div>
 						<img class="img-responsive" src="img/logos/logo-4.png" alt="">
 					</div> -->
@@ -486,9 +494,9 @@
 					<div>
 						<img class="img-responsive" src="img/logos/logo-07.png" alt="">
 					</div>
-					<div>
+					<!-- <div>
 						<img class="img-responsive" src="img/logos/logo-08.png" alt="">
-					</div>
+					</div> -->
 					<div>
 						<img class="img-responsive" src="img/logos/logo-09.png" alt="">
 					</div>
@@ -523,5 +531,17 @@
 	<script src="vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
 	<script src="vendor/circle-flip-slideshow/js/jquery.flipshow.js"></script>
 	<script src="js/views/view.home.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			$('#scroll-down').click(function()
+			{
+				var $target = $('html,body');
+				// console.log($target.height());
+				$target.animate({scrollTop: /*$target.height()*/ 600}, 1000);
+			});
+		});
+	</script>
 
 <?php endblock() ?>

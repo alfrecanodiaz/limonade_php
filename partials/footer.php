@@ -1,6 +1,6 @@
 <footer id="footer">
 	<div class="container">
-		<div class="row">
+		<div class="row footer-top">
 			<div class="footer-ribbon">
 				<span>Entre em contato</span>
 			</div>
@@ -42,7 +42,7 @@
 			<div class="col-md-2">
 				<h4>Siga-nos</h4>
 				<ul class="social-icons">
-					<li class="social-icons-facebook">
+					<li class="social-icons-facebook" style="box-shadow: none;">
 						<a href="http://www.facebook.com/" target="_blank" title="Facebook" style="margin-left: 25px;">
 							<i class="fa fa-facebook fa-center"></i>
 						</a>
@@ -53,7 +53,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="footer-copyright">
+	<div class="footer-copyright" style="padding: 25px 0 0;">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-2">
@@ -61,15 +61,18 @@
 						<img alt="RD Medical SRL" class="img-responsive" src="img/logo-footer.png">
 					</a>
 				</div>
-				<div class="col-md-7">
+				<div class="col-md-4">
 					<p>© Copyright 2017. Todos os direitos reservados.</p>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12 text-center" style="margin-bottom: 2px;">
+				<div class="col-md-6 text-left">
 					Desenvolvido por <a href="http://www.zentcode.com/" target="_blank">Zentcode</a>
 				</div>
 			</div>
+			<!-- <div class="row">
+				<div class="col-md-12 text-center" style="margin-bottom: 2px;">
+					Desenvolvido por <a href="http://www.zentcode.com/" target="_blank">Zentcode</a>
+				</div>
+			</div> -->
 		</div>
 	</div>
 </footer>

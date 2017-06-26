@@ -11,6 +11,8 @@ if ( isset( $_GET[ 'lang' ] ) ) {
 	if ( is_valid_lang( $lang ) ) {
 		set_lang( $lang );
 		$trans = array_merge( $trans, require( 'resources/lang/'. $lang .'.php' ) );
+	} else if ( isset( $_SESSION[ "lang" ] ) ) {
+		$trans = array_merge( $trans, require( 'resources/lang/'. $_SESSION[ "lang" ] .'.php' ) );
 	}
 } else if ( isset( $_SESSION[ "lang" ] ) ) {
 	$trans = array_merge( $trans, require( 'resources/lang/'. $_SESSION[ "lang" ] .'.php' ) );
@@ -27,7 +29,7 @@ if ( isset( $_GET[ 'lang' ] ) ) {
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">	
 
-	<?php startblock('title') ?><?php endblock() ?>	
+	<?php startblock('title') ?><?php endblock() ?>
 
 	<meta name="keywords" content="rd, medical" />
 	<meta name="description" content="RD Medical S.A.">
@@ -65,7 +67,8 @@ if ( isset( $_GET[ 'lang' ] ) ) {
 	<link rel="stylesheet" href="css/theme-animate.css">
 
 	<!-- Skin CSS -->
-	<link rel="stylesheet" href="css/skins/default.css">
+	<!-- <link rel="stylesheet" href="css/skins/default.css"> -->
+	<link rel="stylesheet" href="css/skins/custom.css">
 
 	<!-- Theme Custom CSS -->
 	<link rel="stylesheet" href="css/custom.css">

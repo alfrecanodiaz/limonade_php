@@ -62,35 +62,35 @@
 								<nav>
 									<ul class="nav nav-pills" id="mainNav">
 										<li class="nav-li">
-											<a class="nav-page" href="<?= get_url_page( 'index' ); ?>">Home</a>
+											<a class="nav-page sliding-middle-out" href="<?= get_url_page( 'index' ); ?>">Home</a>
 										</li>
 										<li class="nav-li">
-											<a class="nav-page" href="<?= get_url_page( 'about-us' ); ?>">A Empresa</a>
+											<a class="nav-page sliding-middle-out" href="<?= get_url_page( 'about-us' ); ?>">A Empresa</a>
 										</li>
 										<li class="nav-li">
-											<a class="nav-page" href="<?= get_url_page( 'solucoes' ); ?>">Soluções</a>
+											<a class="nav-page sliding-middle-out" href="<?= get_url_page( 'solucoes' ); ?>">Soluções</a>
 										</li>
 										<li class="dropdown nav-li">
-											<a class="nav-page" class="dropdown-toggle" href="#">
+											<a class="dropdown-toggle" href="#">
 												Parceiros
 											</a>
 											<ul class="dropdown-menu">
 												<!-- <li><a class="nav-page" href="<?= get_url_page( 'parceiro3' ); ?>">Alfamed</a></li> -->
-												<li><a class="nav-page" href="<?= get_url_page( 'parceiro2' ); ?>">Baumer</a></li>
+												<li><a href="<?= get_url_page( 'parceiro2' ); ?>">Baumer</a></li>
 												<!-- <li><a class="nav-page" href="<?= get_url_page( 'parceiro4' ); ?>">CDK</a></li> -->
 												<!-- <li><a class="nav-page" href="parceiro1.php">RC Móveis</a></li> -->
-												<li><a class="nav-page" href="<?= get_url_page( 'parceiro6' ); ?>">Bionext</a></li>
+												<li><a href="<?= get_url_page( 'parceiro6' ); ?>">Bionext</a></li>
 											</ul>
 										</li>
 										
 										<li class="nav-li">
-											<a class="nav-page" href="<?= get_url_page( 'assist' ); ?>">Assistência Técnica</a>
+											<a class="nav-page sliding-middle-out" href="<?= get_url_page( 'assist' ); ?>">Assistência Técnica</a>
 										</li>
 										<!-- <li class="nav-li">
 											<a class="nav-page" href="<?= get_url_page( 'blog' ); ?>">Blog</a>
 										</li> -->
 										<li class="nav-li">
-											<a class="nav-page" href="<?= get_url_page( 'contact-us' ); ?>">Contato</a>
+											<a class="nav-page sliding-middle-out" href="<?= get_url_page( 'contact-us' ); ?>">Contato</a>
 										</li>
 																				
 									</ul>

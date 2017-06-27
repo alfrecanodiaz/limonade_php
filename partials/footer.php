@@ -8,13 +8,10 @@
 				<div class="newsletter">
 					<h4>Newsletter</h4>
 					<p>Acompanhe nossos recursos e tecnologia sempre em evolução. Insira o seu e-mail para receber nossa newsletter.</p>
-
 					<div class="alert alert-success hidden" id="newsletterSuccess">
 						<strong>Sucesso!</strong> Você foi adicionado a nossa Newsletter.
 					</div>
-
 					<div class="alert alert-danger hidden" id="newsletterError"></div>
-
 					<form id="newsletterForm" action="php/newsletter-subscribe.php" method="POST">
 						<div class="input-group">
 							<input class="form-control" placeholder="Seu e-mail" name="newsletterEmail" id="newsletterEmail" type="text">
@@ -26,7 +23,7 @@
 				</div>
 			</div>
 			<div class="col-md-3">
-			<div id="tweet" class="twitter" data-plugin-tweets data-plugin-options='{"username": "", "count": 2}'>
+				<div id="tweet" class="twitter" data-plugin-tweets data-plugin-options='{"username": "", "count": 2}'>
 				</div>
 			</div>
 			<div class="col-md-4">
@@ -69,9 +66,9 @@
 				</div>
 			</div>
 			<!-- <div class="row">
-				<div class="col-md-12 text-center" style="margin-bottom: 2px;">
-					Desenvolvido por <a href="http://www.zentcode.com/" target="_blank">Zentcode</a>
-				</div>
+					<div class="col-md-12 text-center" style="margin-bottom: 2px;">
+							Desenvolvido por <a href="http://www.zentcode.com/" target="_blank">Zentcode</a>
+					</div>
 			</div> -->
 		</div>
 	</div>

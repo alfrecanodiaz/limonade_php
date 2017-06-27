@@ -5,7 +5,8 @@
 				<div class="header-column">
 					<div class="header-logo">
 						<a href="<?= get_url_page( 'index' ); ?>">
-							<img alt="RD Medical SA" width="230" height="50" data-sticky-top="26" src="img/logo.png">
+							<!-- <img alt="RD Medical SA" width="230" height="50" data-sticky-top="26" src="img/logo.png"> -->
+							<img alt="RD Medical SA" width="230" height="40" data-sticky-top="26" src="img/logo.png">
 						</a>
 					</div>
 				</div>

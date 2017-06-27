@@ -48,5 +48,61 @@ ul.portfolio-list .thumb-info-wrapper {
 }
 
 .home-intro {
+	// border-top: 4px solid #005087;
+	border-bottom: 4px solid #005087;
+    background-color: white;
+}
+
+.home-intro p {
+    color: #3a3c41;
+}
+
+.page-header {
     background-color: #3a3c41;
+    border-bottom: 5px solid #3a3c41;
+    border-top: 5px solid #3a3c41;
+}
+
+#header .header-nav-top .nav > li > span {
+    color: #9ba0aa;
+}
+
+.call-to-action.call-to-action-default {
+    background: #f0f5f7;
+}
+
+.call-to-action.call-to-action-in-footer {
+    margin-bottom: -10px !important;
+}
+
+ul.nav-pills > li.active > a {
+    background-color: transparent;
+    color: #005087;
+    border-bottom: 3px solid #005087;
+}
+
+#header .header-nav-main nav > ul > li.open > a, #header .header-nav-main nav > ul > li:hover > a {
+    background-color: transparent;
+    color: #005087;
+    border-bottom: 3px solid #005087;
+}
+
+#header .header-nav-main nav > ul > li > a {
+    border-radius: 0;
+}
+
+html .btn-primary {
+    border-radius: .5rem;
+    color: #005087 !important;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    background-color: transparent;
+    border: 3px solid #005087;
+}
+
+html .btn-primary:hover {
+    background-color: #f4f4f4;
+}
+
+html .btn-primary:active, html .btn-primary:focus, html .btn-primary:active:hover, html .btn-primary:active:focus {
+    background-color: #f4f4f4;
 }

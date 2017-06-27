@@ -28,10 +28,20 @@
 		    top: 0;
 		    pointer-events: none;
 		    z-index: 99;
-		    background: rgba(0,0,0,.5);
+		    background: rgba(58, 60, 65, 0.7);
 		}
 		.slider-container .main-label {
 			line-height: 130px;
+		}
+		.fa.fa-circle {
+			font-size: 12px !important;
+		}
+/*		.feature-box.feature-box-style-2 .feature-box-icon {
+		    width: auto;
+		    height: auto;
+		}*/
+		.feature-box .feature-box-icon {
+		    display: flex;
 		}
 	</style>
 
@@ -303,8 +313,8 @@
 
 				<div class="row">
 					<div class="col-md-12 text-center">
-						<button id="scroll-down" style="background: none !important; border:none !important;">
-							<i class="fa fa-chevron-down" style="color: white; font-size: 35px;"></i>
+						<button id="scroll-down" style="background: none !important; border:none !important; margin-top: -10px;">
+							<i class="fa fa-chevron-down" style="color: #005087; font-size: 35px;"></i>
 						</button>
 					</div>
 				</div>
@@ -335,7 +345,7 @@
 			</div>
 		</div>
 
-		<section class="section">
+		<section class="section" style="background: #f0f5f7; border-top: 0;">
 			<div class="container">
 
 				<div class="row">
@@ -344,7 +354,7 @@
 							<div class="col-md-4">
 								<div class="feature-box feature-box-style-2">
 									<div class="feature-box-icon">
-										<i class="fa fa-check"></i>
+										<i class="fa fa-circle"></i>
 									</div>
 									<div class="feature-box-info">
 										<h4 class="mb-none">Equipamentos Hospitalares</h4>
@@ -353,7 +363,7 @@
 								</div>
 								<div class="feature-box feature-box-style-2">
 									<div class="feature-box-icon">
-										<i class="fa fa-check"></i>
+										<i class="fa fa-circle"></i>
 									</div>
 									<div class="feature-box-info">
 										<h4 class="mb-none">Sistema de PACS/RIS</h4>
@@ -364,7 +374,7 @@
 							<div class="col-md-4">
 								<div class="feature-box feature-box-style-2">
 									<div class="feature-box-icon">
-										<i class="fa fa-check"></i>
+										<i class="fa fa-circle"></i>
 									</div>
 									<div class="feature-box-info">
 										<h4 class="mb-none">Teleradiologia</h4>
@@ -373,7 +383,7 @@
 								</div>
 								<div class="feature-box feature-box-style-2">
 									<div class="feature-box-icon">
-										<i class="fa fa-check"></i>
+										<i class="fa fa-circle"></i>
 									</div>
 									<div class="feature-box-info">
 										<h4 class="mb-none">Produtos Biotecnológicos</h4>
@@ -384,18 +394,18 @@
 							<div class="col-md-4">
 								<div class="feature-box feature-box-style-2">
 									<div class="feature-box-icon">
-										<i class="fa fa-check"></i>
+										<i class="fa fa-circle"></i>
 									</div>
 									<div class="feature-box-info">
-										<h4 class="mb-none">Digitalizador de Imagens Radiológicas (CR)</h4>
+										<h4 class="mb-none">Partes e Peças de Reposição</h4>
 										<!-- <p class="tall">Equipe RD Medical, favor indicar um resumo para <span class="alternative-font">preencher</span> esses textos.</p> -->
 									</div>
-								</div>
+	                              </div>
 								</div>
 								<div class="col-md-4">
 								<div class="feature-box feature-box-style-2">
 									<div class="feature-box-icon">
-										<i class="fa fa-check"></i>
+										<i class="fa fa-circle"></i>
 									</div>
 									<div class="feature-box-info">
 										<h4 class="mb-none">Manutenção de Equipamentos</h4>
@@ -406,7 +416,7 @@
 								<div class="col-md-4">
 								<div class="feature-box feature-box-style-2">
 									<div class="feature-box-icon">
-										<i class="fa fa-check"></i>
+										<i class="fa fa-circle"></i>
 									</div>
 									<div class="feature-box-info">
 										<h4 class="mb-none">Cursos de Capacitação em Radiologia</h4>
@@ -417,7 +427,7 @@
 								<div class="col-md-4">
 								<div class="feature-box feature-box-style-2">
 									<div class="feature-box-icon">
-										<i class="fa fa-check"></i>
+										<i class="fa fa-circle"></i>
 									</div>
 									<div class="feature-box-info">
 										<h4 class="mb-none">Próteses e Materiais de Osteossíntese.</h4>
@@ -428,13 +438,13 @@
 								<div class="col-md-4">
 								<div class="feature-box feature-box-style-2">
 									<div class="feature-box-icon">
-										<i class="fa fa-check"></i>
+										<i class="fa fa-circle"></i>
 									</div>
 									<div class="feature-box-info">
-										<h4 class="mb-none">Partes e Peças de Reposição</h4>
+										<h4 class="mb-none">Digitalizador de Imagens Radiológicas (CR)</h4>
 										<!-- <p class="tall">Equipe RD Medical, favor indicar um resumo para <span class="alternative-font">preencher</span> esses textos.</p> -->
 									</div>
-	                              </div>
+								</div>
 								</div>
 							</div>
 						</div>

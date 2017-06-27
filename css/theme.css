@@ -522,7 +522,8 @@ html:not(.sticky-header-active) #header.header-transparent-sticky-deactive .head
 		left: auto;
 		border-radius: 0 4px 4px;
 		border: 0;
-		border-top: 5px solid #CCC;
+		// border-top: 5px solid #CCC;
+		border-top: 4px solid #CCC;//custom
 		box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
 		margin: -3px 0 0 0;
 		min-width: 200px;

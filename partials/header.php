@@ -13,6 +13,9 @@
 				<div class="header-column">
 					<div class="header-row">
 						
+						<button class="btn header-btn-collapse-nav btn-cs" data-toggle="collapse" data-target=".header-nav-main">
+							<i class="fa fa-bars"></i>
+						</button>
 						<nav class="header-nav-top">
 							<ul class="nav nav-pills">
 								<!-- <li class="hidden-xs">
@@ -50,7 +53,7 @@
 					</div>
 					<div class="header-row">
 						<div class="header-nav">
-							<button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main">
+							<button class="btn header-btn-collapse-nav hidden-xs" data-toggle="collapse" data-target=".header-nav-main">
 								<i class="fa fa-bars"></i>
 							</button>
 							<ul class="header-social-icons social-icons hidden-xs">

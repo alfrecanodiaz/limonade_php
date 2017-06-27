@@ -119,3 +119,16 @@ ul.nav-pills > li:hover > .nav-page:after, ul.nav-pills > li.active > .nav-page:
     width: 100%;
     background: #005087;
 }
+
+.btn-cs {
+    display: none !important;
+}
+
+@media (max-width: 767px) {
+    .btn-cs {
+        display: block !important;
+    }
+    .header-body {
+        padding-top: 25px !important;
+    }
+}

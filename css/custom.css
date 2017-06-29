@@ -58,9 +58,26 @@ ul.portfolio-list .thumb-info-wrapper {
 }
 
 .page-header {
-    background-color: #3a3c41;
-    border-bottom: 5px solid #3a3c41;
-    border-top: 5px solid #3a3c41;
+    background-color: #ffffff;
+    border-bottom: 4px solid #005087;
+    border-top: 4px solid #005087;
+}
+
+.page-header h1 {
+    color: #005087 !important;
+}
+
+section.page-header h1 {
+    border-bottom: none !important;
+}
+
+.breadcrumb > .active {
+    color: #3a3c41;
+}
+
+section.section {
+    background: #f0f5f7;
+    border-top: 5px solid #f0f5f7;
 }
 
 #header .header-nav-top .nav > li > span {

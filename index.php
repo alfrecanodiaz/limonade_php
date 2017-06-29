@@ -36,10 +36,6 @@
 		.fa.fa-circle {
 			font-size: 12px !important;
 		}
-/*		.feature-box.feature-box-style-2 .feature-box-icon {
-		    width: auto;
-		    height: auto;
-		}*/
 		.feature-box .feature-box-icon {
 		    display: flex;
 		}

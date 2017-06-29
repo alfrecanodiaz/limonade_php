@@ -148,16 +148,6 @@ if ( isset( $_GET[ 'lang' ] ) ) {
 	<!-- Theme Initialization Files -->
 	<script src="js/theme.init.js"></script>
 
-	<script type="text/javascript">
-		$(function()
-		{
-			if (!window.location.pathname.substr(1) == '')
-				$('a.nav-page[href="'+window.location.pathname.substr(1)+'"]').parent().closest('li.nav-li').addClass('active');
-			else
-				$('a.nav-page[href="index.php"]').parent().closest('li.nav-li').addClass('active');
-		});
-	</script>
-
 	<!-- =========================================
     Pages Script Section
     ========================================== -->

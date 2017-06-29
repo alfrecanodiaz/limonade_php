@@ -5,7 +5,6 @@
 				<div class="header-column">
 					<div class="header-logo">
 						<a href="<?= get_url_page( 'index' ); ?>">
-							<!-- <img alt="RD Medical SA" width="230" height="50" data-sticky-top="26" src="img/logo.png"> -->
 							<img alt="RD Medical SA" width="230" height="40" data-sticky-top="26" src="img/logo.png">
 						</a>
 					</div>
@@ -18,12 +17,6 @@
 						</button>
 						<nav class="header-nav-top">
 							<ul class="nav nav-pills">
-								<!-- <li class="hidden-xs">
-									<a href="<?= get_url_page( 'about-us' ); ?>"><i class="fa fa-angle-right"></i> Sobre Nós</a>
-								</li> -->
-								<!-- <li class="hidden-xs">
-									<a href="<?= get_url_page( 'contact-us' ); ?>"><i class="fa fa-angle-right"></i> Entre em contato</a>
-								</li> -->
 								<li>
 									<span class="ws-nowrap"><i class="fa fa-phone"></i> (+595) 994 847395</span>
 								</li>
@@ -64,37 +57,49 @@
 							<div class="header-nav-main header-nav-main-effect-1 header-nav-main-sub-effect-1 collapse">
 								<nav>
 									<ul class="nav nav-pills" id="mainNav">
-										<li class="nav-li">
-											<a class="nav-page sliding-middle-out" href="<?= get_url_page( 'index' ); ?>">Home</a>
-										</li>
-										<li class="nav-li">
-											<a class="nav-page sliding-middle-out" href="<?= get_url_page( 'about-us' ); ?>">A Empresa</a>
-										</li>
-										<li class="nav-li">
-											<a class="nav-page sliding-middle-out" href="<?= get_url_page( 'solucoes' ); ?>">Soluções</a>
-										</li>
+
+										<?php foreach ( get_all_headers( 'top' ) as $key => $value ) { ?>
+											<?php if ( get_current_page() == clean_uri( get_url_page( $value ) ) ) { ?>
+												<li class="nav-li active">
+													<a class="nav-page sliding-middle-out" href="<?= get_url_page( $value ); ?>">
+														<?= $key; ?>
+													</a>
+												</li>
+											<?php } else { ?>
+												<li class="nav-li">
+													<a class="nav-page sliding-middle-out" href="<?= get_url_page( $value ); ?>">
+														<?= $key; ?>
+													</a>
+												</li>
+											<?php } ?>
+										<?php } ?>
+
 										<li class="dropdown nav-li">
 											<a class="dropdown-toggle" href="#">
 												Parceiros
 											</a>
 											<ul class="dropdown-menu">
-												<!-- <li><a class="nav-page" href="<?= get_url_page( 'parceiro3' ); ?>">Alfamed</a></li> -->
-												<li><a href="<?= get_url_page( 'parceiro2' ); ?>">Baumer</a></li>
-												<!-- <li><a class="nav-page" href="<?= get_url_page( 'parceiro4' ); ?>">CDK</a></li> -->
-												<!-- <li><a class="nav-page" href="parceiro1.php">RC Móveis</a></li> -->
-												<li><a href="<?= get_url_page( 'parceiro6' ); ?>">Bionext</a></li>
+												<?php foreach ( get_all_headers( 'dropdown' ) as $key => $value ) { ?>
+													<li><a href="<?= get_url_page( $value ); ?>"><?= $key; ?></a></li>	
+												<?php } ?>
 											</ul>
 										</li>
-										
-										<li class="nav-li">
-											<a class="nav-page sliding-middle-out" href="<?= get_url_page( 'assist' ); ?>">Assistência Técnica</a>
-										</li>
-										<!-- <li class="nav-li">
-											<a class="nav-page" href="<?= get_url_page( 'blog' ); ?>">Blog</a>
-										</li> -->
-										<li class="nav-li">
-											<a class="nav-page sliding-middle-out" href="<?= get_url_page( 'contact-us' ); ?>">Contato</a>
-										</li>
+
+										<?php foreach ( get_all_headers( 'bottom' ) as $key => $value ) { ?>
+											<?php if ( get_current_page() == clean_uri( get_url_page( $value ) ) ) { ?>
+												<li class="nav-li active">
+													<a class="nav-page sliding-middle-out" href="<?= get_url_page( $value ); ?>">
+														<?= $key; ?>
+													</a>
+												</li>
+											<?php } else { ?>
+												<li class="nav-li">
+													<a class="nav-page sliding-middle-out" href="<?= get_url_page( $value ); ?>">
+														<?= $key; ?>
+													</a>
+												</li>
+											<?php } ?>
+										<?php } ?>
 																				
 									</ul>
 								</nav>

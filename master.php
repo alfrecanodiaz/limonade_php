@@ -27,7 +27,7 @@ if ( isset( $_GET[ 'lang' ] ) ) {
 
 	<!-- Basic -->
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 	<?php startblock('title') ?><?php endblock() ?>
 

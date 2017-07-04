@@ -12,6 +12,8 @@
 
 <?php startblock('styles') ?>
 
+<link rel="stylesheet" type="text/css" href="css/sidebar.css">
+
 <style type="text/css">
 	.featured-boxes-flat .featured-box .icon-featured {
 	    margin: -45px 0 -15px;
@@ -47,113 +49,152 @@
 	</section>
 
 	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<h3 class="heading-primary">Soluções</h3>
-				<p>A RD Medical, uma empresa constituída com a finalidade de comercialização, representação e assistência técnica de equipamentos para área Hospitalar, atuando em todo o território nacional, buscando sempre através de planejamento estratégico aprimorar sua forma de atuação, levando aos clientes serviços com qualidade e sempre oferecendo o melhor com tecnologia de ultima geração aliada ao serviço de apoio.</p>
+		<div class="col-md-3">
+
+			<div class="side-menu">
+				<nav class="navbar navbar-default" role="navigation">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<div class="brand-wrapper">
+							<!-- Brand -->
+							<div class="brand-name-wrapper">
+								<a class="navbar-brand">
+									Menu
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- Main Menu -->
+					<div class="side-menu-container">
+						<ul class="nav navbar-nav">
+							<!-- <li><a href="#"><span class="glyphicon glyphicon-send"></span> Link</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-plane"></span> Active Link</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-cloud"></span> Link</a></li> -->
+							<!-- Dropdown-->
+							<li class="panel panel-default" id="dropdown">
+								<a data-toggle="collapse" href="#dropdown-lvl1" aria-expanded="true"> <!-- Open aria-expanded="true" -->
+									<span class="glyphicon glyphicon-list"></span> Equipos <span class="caret"></span>
+								</a>
+								<!-- Dropdown level 1 -->
+								<div id="dropdown-lvl1" class="panel-collapse collapse in"> <!-- Open class = 'in' -->
+									<div class="panel-body">
+										<ul class="nav navbar-nav">
+											<li><a id="prueba" href="#"><span class="glyphicon glyphicon-chevron-right"></span>Nuevos</a></li>
+											<!-- Dropdown level 2 -->
+											<li class="panel panel-default" id="dropdown">
+												<a data-toggle="collapse" href="#dropdown-lvl2">
+													<span class="glyphicon glyphicon-list"></span> Seminuevos <span class="caret"></span>
+												</a>
+												<div id="dropdown-lvl2" class="panel-collapse collapse">
+													<div class="panel-body">
+														<ul class="nav navbar-nav">
+															<li><a href="#"><span class="glyphicon glyphicon-chevron-right"></span>Imagenes</a></li>
+															<li><a href="#"><span class="glyphicon glyphicon-chevron-right"></span>CR</a></li>
+														</ul>
+													</div>
+												</div>
+											</li>
+											<li><a href="#"><span class="glyphicon glyphicon-chevron-right"></span>Alquiler de equipos</a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li><a href="#"><span class="glyphicon glyphicon-list"></span> Prótesis (servicio)</a></li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</nav>
 			</div>
-			</div>
-		<div class="featured-boxes">
-			<div class="row">
-				<div class="featured-boxes featured-boxes-flat">
-			<div class="row">
-				<div class="col-md-3 col-sm-6">
-					<a href="cat-centro-cirurgico.php">
-					<div class="featured-box featured-box-primary featured-box-effect-2">
-						<div class="box-content">
-							<i class="icon-featured fa fa-user"></i>
-							<h4>Centro Cirúrgico</h4>
-						</div>
-					</div></a>
-				</div>
-				<div class="col-md-3 col-sm-6">
-					<a href="cat-monitores-multiparametros.php">
-					<div class="featured-box featured-box-tertiary featured-box-effect-2">
-						<div class="box-content">
-							<i class="icon-featured fa fa-book"></i>
-							<h4>Monitores Multiparâmetros</h4>
-						</div>
-					</div></a>
-				</div>
-				<div class="col-md-3 col-sm-6">
-				<a href="cat-ortopedia.php">
-					<div class="featured-box featured-box-primary featured-box-effect-2">
-						<div class="box-content">
-							<i class="icon-featured fa fa-trophy"></i>
-							<h4>Ortopedia</h4>
-						</div>
-					</div></a>
-				</div>
-				
-				<div class="col-md-3 col-sm-6">
-				<a href="cat-ultrassom.php">
-					<div class="featured-box featured-box-tertiary featured-box-effect-2">
-						<div class="box-content">
-							<i class="icon-featured fa fa-cogs"></i>
-							<h4>Ultrassom</h4>
-						</div>
-					</div></a>
-				</div>
-				<div class="col-md-3 col-sm-6">
-				<a href="cat-coluna.php">
-					<div class="featured-box featured-box-primary featured-box-effect-2">
-						<div class="box-content">
-							<i class="icon-featured fa fa-user"></i>
-							<h4>Coluna</h4>
-						</div>
-					</div></a>
-				</div>
-				<div class="col-md-3 col-sm-6">
-				<a href="cat-raiox.php">
-					<div class="featured-box featured-box-quaternary featured-box-effect-2">
-						<div class="box-content">
-							<i class="icon-featured fa fa-user"></i>
-							<h4>Raio X</h4>
-						</div>
-					</div></a>
-				</div>
-				<div class="col-md-3 col-sm-6">
-				<a href="cat-moveis-hospitalares.php">
-					<div class="featured-box featured-box-secondary featured-box-effect-2">
-						<div class="box-content">
-							<i class="icon-featured fa fa-user"></i>
-							<h4>Móveis Hospitalares</h4>
-						</div>
-					</div></a>
-				</div>
-				<div class="col-md-3 col-sm-6">
-				<a href="cat-seminovos.php">
-					<div class="featured-box featured-box-quaternary featured-box-effect-2">
-						<div class="box-content">
-							<i class="icon-featured fa fa-user"></i>
-							<h4>Seminovos</h4>
-						</div>
-					</div></a>
-				</div>
-				<div class="col-md-3 col-sm-6">
-				<a href="cat-oximetro.php">
-					<div class="featured-box featured-box-tertiary featured-box-effect-2">
-						<div class="box-content">
-							<i class="icon-featured fa fa-cogs"></i>
-							<h4>Oxímetro</h4>
-						</div>
-					</div></a>
-				</div>
-				<div class="col-md-3 col-sm-6">
-				<a href="cat-digitalizadores.php">
-					<div class="featured-box featured-box-secondary featured-box-effect-2">
-						<div class="box-content">
-							<i class="icon-featured fa fa-user"></i>
-							<h4>Digitalizadores</h4>
-						</div>
-					</div></a>
-				</div>
-			</div>
-			</div>
+
 		</div>
+		<div class="col-md-9">
 
-		<hr>
+			<div role="main" class="main shop">
+				<div id="content-scroll" class="container">
+					<div class="row" id="first">
+						<div class="col-md-6">
+							<h1 class="mb-none"><strong>Sistemas de Anestesia</strong></h1>
+						</div>
+					</div>
+					<div class="row">
+						<ul class="products product-thumb-info-list" data-plugin-masonry>
+							<!-- PRODUTO -->
+							<li class="col-md-3 col-sm-6 col-xs-12 product">
+								<a href="">
+								</a>
+								<span class="product-thumb-info">
+									<a href="">
+										<span class="product-thumb-info-image">
+											<span class="product-thumb-info-act">
+												<span class="product-thumb-info-act-left"><em>Ver</em></span>
+												<span class="product-thumb-info-act-right"><em><i class="fa fa-plus"></i> Detalhes</em></span>
+											</span>
+											<img alt="" class="img-responsive" src="img/products/conquest.jpg">
+										</span>
+									</a>
+									<span class="product-thumb-info-content">
+										<a href="">
+											<h4>Conquest Vertex</h4>
+											<span class="price">
+											</span>
+										</a>
+									</span>
+								</span>
+							</li>
+							<!-- FIM PRODUTO -->
+							<!-- PRODUTO -->
+							<li class="col-md-3 col-sm-6 col-xs-12 product">
+								<a href="">
+								</a>
+								<span class="product-thumb-info">
+									<a href="">
+										<span class="product-thumb-info-image">
+											<span class="product-thumb-info-act">
+												<span class="product-thumb-info-act-left"><em>Ver</em></span>
+												<span class="product-thumb-info-act-right"><em><i class="fa fa-plus"></i> Detalhes</em></span>
+											</span>
+											<img alt="" class="img-responsive" src="img/products/SAB-2000.jpg">
+										</span>
+									</a>
+									<span class="product-thumb-info-content">
+										<a href="">
+											<h4>SAB 2000</h4>
+											<span class="price">
+											</span>
+										</a>
+									</span>
+								</span>
+							</li>
+							<!-- FIM PRODUTO -->
+							<!-- PRODUTO -->
+							<li class="col-md-3 col-sm-6 col-xs-12 product">
+								<a href="">
+								</a>
+								<span class="product-thumb-info">
+									<a href="">
+										<span class="product-thumb-info-image">
+											<span class="product-thumb-info-act">
+												<span class="product-thumb-info-act-left"><em>Ver</em></span>
+												<span class="product-thumb-info-act-right"><em><i class="fa fa-plus"></i> Detalhes</em></span>
+											</span>
+											<img alt="" class="img-responsive" src="img/products/SAB_4000.jpg">
+										</span>
+									</a>
+									<span class="product-thumb-info-content">
+										<a href="">
+											<h4>SAB 4000</h4>
+											<span class="price">
+											</span>
+										</a>
+									</span>
+								</span>
+							</li>
+							<!-- FIM PRODUTO -->
+						</ul>
+					</div>
+				</div>
+			</div>
 
+		</div>
 	</div>
 
 </div>
@@ -161,5 +202,15 @@
 <?php endblock() ?>
 
 <?php startblock('scripts') ?>
+
+<script type="text/javascript">
+	$(document).ready(function()
+	{
+		$('#prueba').click(function()
+		{
+			$("#content-scroll").load("prueba-include.php").hide().fadeIn();
+		});
+	});
+</script>
 
 <?php endblock() ?>

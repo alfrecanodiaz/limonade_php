@@ -125,7 +125,7 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="call-to-action-content">
-						<h3>A <strong>máquina nova ou semi-nova</strong> que você precisa <strong>está</strong> aqui!</h3>
+						<h3>A <strong>equipamento novo ou semi-novo</strong> que você precisa <strong>está</strong> aqui!</h3>
 						<p>Acesse agora mesmo nosso <strong>catálogo</strong> e veja.</p>
 					</div>
 					<div class="call-to-action-btn">

@@ -1,6 +1,6 @@
 <div class="row" id="second">
 	<div class="col-md-6">
-		<h1 class="mb-none"><strong>Estativas</strong></h1>
+		<h1 class="shop-title mb-none"><strong>Estativas</strong></h1>
 	</div>
 </div>
 <div class="row">

@@ -22,6 +22,9 @@
 		min-height: 140px;
 		height: 140px;
 	}
+	.shop-title {
+		color: #005087;
+	}
 </style>
 
 <?php endblock() ?>
@@ -54,16 +57,15 @@
 			<div class="side-menu">
 				<nav class="navbar navbar-default" role="navigation">
 					<!-- Brand and toggle get grouped for better mobile display -->
-					<div class="navbar-header">
+					<!-- <div class="navbar-header">
 						<div class="brand-wrapper">
-							<!-- Brand -->
 							<div class="brand-name-wrapper">
 								<a class="navbar-brand">
 									Menu
 								</a>
 							</div>
 						</div>
-					</div>
+					</div> -->
 					<!-- Main Menu -->
 					<div class="side-menu-container">
 						<ul class="nav navbar-nav">
@@ -72,34 +74,34 @@
 							<li><a href="#"><span class="glyphicon glyphicon-cloud"></span> Link</a></li> -->
 							<!-- Dropdown-->
 							<li class="panel panel-default" id="dropdown">
-								<a data-toggle="collapse" href="#dropdown-lvl1" aria-expanded="true"> <!-- Open aria-expanded="true" -->
-									<span class="glyphicon glyphicon-list"></span> Equipos <span class="caret"></span>
+								<a data-toggle="collapse" href="#dropdown-lvl1" aria-expanded="true" style="font-weight: bold;border-bottom: 1px solid #3a3c41;"> <!-- Open aria-expanded="true" -->
+									 Equipos <span class="caret"></span>
 								</a>
 								<!-- Dropdown level 1 -->
 								<div id="dropdown-lvl1" class="panel-collapse collapse in"> <!-- Open class = 'in' -->
 									<div class="panel-body">
 										<ul class="nav navbar-nav">
-											<li><a id="prueba" href="#"><span class="glyphicon glyphicon-chevron-right"></span>Nuevos</a></li>
+											<li><a href="#" data-page="prueba">Nuevos</a></li>
 											<!-- Dropdown level 2 -->
 											<li class="panel panel-default" id="dropdown">
 												<a data-toggle="collapse" href="#dropdown-lvl2">
-													<span class="glyphicon glyphicon-list"></span> Seminuevos <span class="caret"></span>
+													Seminuevos <span class="caret"></span>
 												</a>
 												<div id="dropdown-lvl2" class="panel-collapse collapse">
 													<div class="panel-body">
 														<ul class="nav navbar-nav">
-															<li><a href="#"><span class="glyphicon glyphicon-chevron-right"></span>Imagenes</a></li>
-															<li><a href="#"><span class="glyphicon glyphicon-chevron-right"></span>CR</a></li>
+															<li><a href="#">Imagenes</a></li>
+															<li><a href="#">CR</a></li>
 														</ul>
 													</div>
 												</div>
 											</li>
-											<li><a href="#"><span class="glyphicon glyphicon-chevron-right"></span>Alquiler de equipos</a></li>
+											<li><a href="#">Alquiler de equipos</a></li>
 										</ul>
 									</div>
 								</div>
 							</li>
-							<li><a href="#"><span class="glyphicon glyphicon-list"></span> Prótesis (servicio)</a></li>
+							<li style="border-bottom: 1px solid #3a3c41;"><a href="#" style="font-weight: bold;"> Prótesis</a></li>
 						</ul>
 					</div><!-- /.navbar-collapse -->
 				</nav>
@@ -112,7 +114,7 @@
 				<div id="content-scroll" class="container">
 					<div class="row" id="first">
 						<div class="col-md-6">
-							<h1 class="mb-none"><strong>Sistemas de Anestesia</strong></h1>
+							<h1 class="shop-title mb-none">Sistemas de Anestesia</h1>
 						</div>
 					</div>
 					<div class="row">
@@ -206,7 +208,7 @@
 <script type="text/javascript">
 	$(document).ready(function()
 	{
-		$('#prueba').click(function()
+		$('.panel-body a').click(function()
 		{
 			$("#content-scroll").load("prueba-include.php").hide().fadeIn();
 		});

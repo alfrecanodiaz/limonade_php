@@ -74,7 +74,7 @@
 							<li><a href="#"><span class="glyphicon glyphicon-cloud"></span> Link</a></li> -->
 							<!-- Dropdown-->
 							<li class="panel panel-default" id="dropdown">
-								<a data-toggle="collapse" href="#dropdown-lvl1" aria-expanded="true" style="font-weight: bold;border-bottom: 1px solid #3a3c41;"> <!-- Open aria-expanded="true" -->
+								<a data-toggle="collapse" href="#dropdown-lvl1" aria-expanded="true" style="font-weight: bold;"> <!-- Open aria-expanded="true" -->
 									 Equipos <span class="caret"></span>
 								</a>
 								<!-- Dropdown level 1 -->
@@ -101,7 +101,7 @@
 									</div>
 								</div>
 							</li>
-							<li style="border-bottom: 1px solid #3a3c41;"><a href="#" style="font-weight: bold;"> Prótesis</a></li>
+							<li><a href="#" style="font-weight: bold;"> Prótesis</a></li>
 						</ul>
 					</div><!-- /.navbar-collapse -->
 				</nav>

@@ -75,33 +75,33 @@
 							<!-- Dropdown-->
 							<li class="panel panel-default" id="dropdown">
 								<a data-toggle="collapse" href="#dropdown-lvl1" aria-expanded="true" style="font-weight: bold;"> <!-- Open aria-expanded="true" -->
-									 Equipos <span class="caret"></span>
+									 Equipamentos <span class="caret"></span>
 								</a>
 								<!-- Dropdown level 1 -->
 								<div id="dropdown-lvl1" class="panel-collapse collapse in"> <!-- Open class = 'in' -->
 									<div class="panel-body">
 										<ul class="nav navbar-nav">
-											<li><a href="#" data-page="prueba">Nuevos</a></li>
+											<li><a href="#" data-page="prueba">Novos</a></li>
 											<!-- Dropdown level 2 -->
 											<li class="panel panel-default" id="dropdown">
 												<a data-toggle="collapse" href="#dropdown-lvl2">
-													Seminuevos <span class="caret"></span>
+													Seminovos <span class="caret"></span>
 												</a>
 												<div id="dropdown-lvl2" class="panel-collapse collapse">
 													<div class="panel-body">
 														<ul class="nav navbar-nav">
-															<li><a href="#">Imagenes</a></li>
+															<li><a href="#">Imagens</a></li>
 															<li><a href="#">CR</a></li>
 														</ul>
 													</div>
 												</div>
 											</li>
-											<li><a href="#">Alquiler de equipos</a></li>
+											<li><a href="#">Locação de Equipamentos</a></li>
 										</ul>
 									</div>
 								</div>
 							</li>
-							<li><a href="#" style="font-weight: bold;"> Prótesis</a></li>
+							<li><a href="#" style="font-weight: bold;">Próteses</a></li>
 						</ul>
 					</div><!-- /.navbar-collapse -->
 				</nav>

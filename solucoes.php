@@ -31,6 +31,10 @@
 	.product-thumb-info h4 {
 	    font-weight: 400;
 	}
+	.side-menu #dropdown .fa.fa-caret-left, .side-menu #dropdown .fa.fa-caret-down {
+	    float: right;
+	    margin: 5px 5px 0;
+	}
 </style>
 
 <?php endblock() ?>
@@ -68,7 +72,7 @@
 							<!-- Dropdown-->
 							<li class="panel panel-default" id="dropdown">
 								<a data-toggle="collapse" href="#dropdown-lvl1" aria-expanded="true" data-page="equipamentos" style="font-weight: bold;"> <!-- Open aria-expanded="true" -->
-									 Equipamentos <span class="caret"></span>
+									 Equipamentos <span class="fa fa-caret-down"></span>
 								</a>
 								<!-- Dropdown level 1 -->
 								<div id="dropdown-lvl1" class="panel-collapse collapse in"> <!-- Open class = 'in' -->
@@ -78,7 +82,7 @@
 											<!-- Dropdown level 2 -->
 											<li class="panel panel-default" id="dropdown">
 												<a data-toggle="collapse" href="#dropdown-lvl2" data-page="seminovos">
-													Seminovos <span class="caret"></span>
+													Seminovos <span class="fa fa-caret-left"></span>
 												</a>
 												<div id="dropdown-lvl2" class="panel-collapse collapse">
 													<div class="panel-body">
@@ -130,6 +134,11 @@
 			var page = $(this).data('page');
 			if (page != '' && page != undefined && page != null)
 				$("#content-scroll").load('soluciones/'+page+'.php').hide().fadeIn();
+		});
+
+		$('.panel.panel-default').find('a').click(function()
+		{
+			$(this).find('span').toggleClass('fa-caret-left fa-caret-down');
 		});
 	});
 </script>

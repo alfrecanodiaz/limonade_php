@@ -116,7 +116,8 @@ function get_all_headers( $position ) {
 			// 'Alfamed' => 'parceiro3',
 			'Baumer' => 'parceiro2',
 			// 'CDK' => 'parceiro4',
-			'Bionext' => 'parceiro6'
+			'Bionext' => 'parceiro6',
+			'Barrfab' => 'parceiro7'
 		);
 	} else {
 		return null;

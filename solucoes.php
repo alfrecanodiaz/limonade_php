@@ -71,7 +71,7 @@
 						<ul class="nav navbar-nav">
 							<!-- Dropdown-->
 							<li class="panel panel-default" id="dropdown">
-								<a data-toggle="collapse" href="#dropdown-lvl1" aria-expanded="true" data-page="equipamentos" style="font-weight: bold;"> <!-- Open aria-expanded="true" -->
+								<a data-toggle="collapse" href="#dropdown-lvl1" aria-expanded="true" data-page="equipamentos"> <!-- Open aria-expanded="true" -->
 									 Equipamentos <span class="fa fa-caret-down"></span>
 								</a>
 								<!-- Dropdown level 1 -->
@@ -102,7 +102,7 @@
 									</div>
 								</div>
 							</li>
-							<li><a data-page="proteses" style="font-weight: bold;">Próteses</a></li>
+							<li><a data-page="proteses">Próteses</a></li>
 						</ul>
 					</div><!-- /.navbar-collapse -->
 				</nav>
@@ -129,8 +129,12 @@
 <script type="text/javascript">
 	$(document).ready(function()
 	{
-		$('.nav.navbar-nav').find('a').click(function()
+		var $nav = $('.nav.navbar-nav');
+		$nav.find('a').click(function()
 		{
+			$nav.find('a.active').removeClass('active');
+			$(this).addClass('active');
+
 			var page = $(this).data('page');
 			if (page != '' && page != undefined && page != null)
 				$("#content-scroll").load('soluciones/'+page+'.php').hide().fadeIn();

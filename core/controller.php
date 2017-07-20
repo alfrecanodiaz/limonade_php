@@ -1,6 +1,7 @@
 <?php
 
 $page_title = 'RD Medical S.A.';
+$uri = "$_SERVER[REQUEST_URI]";
 
 function trans( $name ) {
     global $trans;

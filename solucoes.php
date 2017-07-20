@@ -28,12 +28,55 @@
 	.nav.navbar-nav li a {
 		cursor: pointer;
 	}
+	.product-thumb-info {
+		cursor: pointer;
+	}
 	.product-thumb-info h4 {
 	    font-weight: 400;
 	}
 	.side-menu #dropdown .fa.fa-caret-left, .side-menu #dropdown .fa.fa-caret-down {
 	    float: right;
 	    margin: 5px 5px 0;
+	}
+	.product_view .modal-dialog {
+		max-width: 800px;
+	}
+	@media (min-width: 992px) {
+		.product_view .modal-dialog {
+			width: 100%;
+		}	
+	}
+	.pre-cost {
+		text-decoration: line-through;
+		color: #a5a5a5;
+	}
+	.space-ten {
+		padding: 10px 0;
+	}
+	@media (min-width: 992px) {
+		#left-column {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+	.product-thumb-info .product-thumb-info-image {
+	    background: white;
+	}
+	.modal-product-title {
+		color: #005087;
+		margin-bottom: 10px;
+	}
+	.modal-product-subtitle {
+		color: #005087;
+		margin-bottom: 5px;	
+	}
+	.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {
+		color: #005087;
+	}
+	@media (max-width: 991px) {
+		.product_content {
+			margin-top: 10px;
+		}
 	}
 </style>
 
@@ -62,7 +105,7 @@
 	</section>
 
 	<div class="container">
-		<div class="col-md-3">
+		<div class="col-md-3" id="left-column">
 
 			<div class="side-menu">
 				<nav class="navbar navbar-default" role="navigation">
@@ -113,7 +156,7 @@
 
 			<div role="main" class="main shop">
 				<div id="content-scroll" class="container">
-					<?php include 'soluciones/equipamentos.php' ?>
+					
 				</div>
 			</div>
 
@@ -129,6 +172,11 @@
 <script type="text/javascript">
 	$(document).ready(function()
 	{
+		$.get( 'soluciones/equipamentos.php', function(data)
+		{
+			$("#content-scroll").html(data).hide().fadeIn();
+		});
+
 		var $nav = $('.nav.navbar-nav');
 		$nav.find('a').click(function()
 		{
@@ -137,13 +185,26 @@
 
 			var page = $(this).data('page');
 			if (page != '' && page != undefined && page != null)
-				$("#content-scroll").load('soluciones/'+page+'.php').hide().fadeIn();
+			{
+				$.get( 'soluciones/'+page+'.php', function(data)
+				{
+					$("#content-scroll").html(data).hide().fadeIn();
+				});
+				// $("#content-scroll").load('soluciones/'+page+'.php').hide().fadeIn();
+			}
 		});
 
 		$('.panel.panel-default').find('a').click(function()
 		{
 			$(this).find('span').toggleClass('fa-caret-left fa-caret-down');
 		});
+
+		$('.product-thumb-info-image').on('click', function(event)
+		{
+	        event.preventDefault();
+	        $('#product_view').modal('show');
+	    });
+
 	});
 </script>
 

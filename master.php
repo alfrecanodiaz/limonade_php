@@ -18,6 +18,19 @@ if ( isset( $_GET[ 'lang' ] ) ) {
 	$trans = array_merge( $trans, require( 'resources/lang/'. $_SESSION[ "lang" ] .'.php' ) );
 }
 
+// $data = get_products_by_category( 'equipamentos' );
+// dd($data->num_rows);
+
+// function get_products_images( $product )
+// {
+// 	$product = str_replace( ' ', '-', $product );
+// 	$dir = "img/products/$product";
+// 	$images = glob( "$dir/*.{jpg,png}", GLOB_BRACE );
+// 	return $images;
+// }
+
+// dd(get_products_images('BF683 RX'));
+
 ?>
 <!DOCTYPE html>
 

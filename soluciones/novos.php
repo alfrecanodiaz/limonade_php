@@ -1,81 +1,48 @@
-<div class="row" id="first">
-	<div class="col-md-6">
-		<h1 class="shop-title mb-none">Novos</h1>
-	</div>
-</div>
-<div class="row">
-	<ul class="products product-thumb-info-list" data-plugin-masonry>
-		<!-- PRODUTO -->
-		<li class="col-md-3 col-sm-6 col-xs-12 product">
-			<a href="">
-			</a>
-			<span class="product-thumb-info">
-				<a href="">
-					<span class="product-thumb-info-image">
-						<span class="product-thumb-info-act">
-							<span class="product-thumb-info-act-left"><em>Ver</em></span>
-							<span class="product-thumb-info-act-right"><em><i class="fa fa-plus"></i> Detalhes</em></span>
-						</span>
-						<img alt="" class="img-responsive" src="img/products/conquest.jpg">
-					</span>
-				</a>
-				<span class="product-thumb-info-content">
-					<a href="">
-						<h4>Conquest Vertex</h4>
-						<span class="price">
-						</span>
-					</a>
-				</span>
-			</span>
-		</li>
-		<!-- FIM PRODUTO -->
-		<!-- PRODUTO -->
-		<li class="col-md-3 col-sm-6 col-xs-12 product">
-			<a href="">
-			</a>
-			<span class="product-thumb-info">
-				<a href="">
-					<span class="product-thumb-info-image">
-						<span class="product-thumb-info-act">
-							<span class="product-thumb-info-act-left"><em>Ver</em></span>
-							<span class="product-thumb-info-act-right"><em><i class="fa fa-plus"></i> Detalhes</em></span>
-						</span>
-						<img alt="" class="img-responsive" src="img/products/SAB-2000.jpg">
-					</span>
-				</a>
-				<span class="product-thumb-info-content">
-					<a href="">
-						<h4>SAB 2000</h4>
-						<span class="price">
-						</span>
-					</a>
-				</span>
-			</span>
-		</li>
-		<!-- FIM PRODUTO -->
-		<!-- PRODUTO -->
-		<li class="col-md-3 col-sm-6 col-xs-12 product">
-			<a href="">
-			</a>
-			<span class="product-thumb-info">
-				<a href="">
-					<span class="product-thumb-info-image">
-						<span class="product-thumb-info-act">
-							<span class="product-thumb-info-act-left"><em>Ver</em></span>
-							<span class="product-thumb-info-act-right"><em><i class="fa fa-plus"></i> Detalhes</em></span>
-						</span>
-						<img alt="" class="img-responsive" src="img/products/SAB_4000.jpg">
-					</span>
-				</a>
-				<span class="product-thumb-info-content">
-					<a href="">
-						<h4>SAB 4000</h4>
-						<span class="price">
-						</span>
-					</a>
-				</span>
-			</span>
-		</li>
-		<!-- FIM PRODUTO -->
-	</ul>
-</div>
+<?php
+include ( $_SERVER[ 'DOCUMENT_ROOT' ].'/core/db-config.php' );
+include ( $_SERVER[ 'DOCUMENT_ROOT' ].'/core/db-helper.php' );
+include ( $_SERVER[ 'DOCUMENT_ROOT' ].'/core/products.php' );
+
+$data = get_products_by_subcategory( 'novos' );
+
+$html = '';
+
+if ( $data->num_rows )
+{
+	$linea = '';
+	$count = 0;
+	$init = true;
+	while( $row = $data->fetch_assoc() )
+	{
+		if ( $init )
+		{
+			$linea = $row[ "linea" ];
+			$html .= print_header( $row[ "linea" ] );
+			$html .= print_container();
+			$init = false;
+		}
+
+		if ( $linea != $row[ "linea" ] )
+		{
+			$linea = $row[ "linea" ];
+			$html .= close_container();
+			$html .= print_header( $row[ "linea" ] );
+			$html .= print_container();
+			$count = 0;
+		}
+
+		if ( $count == 3 )
+		{
+			$html .= close_container();
+			$html .= print_container();
+		}
+
+		$html .= print_item( $row );
+		$html .= print_modal( $row );
+
+		$count++;
+	}
+	$html .= close_container();
+}
+
+return $html;

@@ -1,9 +1,23 @@
 <?php
+
 include ( $_SERVER[ 'DOCUMENT_ROOT' ].'/core/db-config.php' );
 include ( $_SERVER[ 'DOCUMENT_ROOT' ].'/core/db-helper.php' );
 include ( $_SERVER[ 'DOCUMENT_ROOT' ].'/core/products.php' );
 
-$data = get_products_by_subcategory( 'novos' );
+switch ( $_POST[ "type" ] )
+{
+	case 'category':
+		$data = get_products_by_category( $_POST[ "param" ] );
+		break;
+
+	case 'subcategory':
+		$data = get_products_by_subcategory( $_POST[ "param" ] );
+		break;
+
+	case 'subsubcategory':
+		$data = get_products_by_subsubcategory( $_POST[ "param" ] );
+		break;
+}
 
 $html = '';
 

@@ -115,30 +115,30 @@
 						<ul class="nav navbar-nav" style="width: 100%;">
 							<!-- Dropdown-->
 							<li class="panel panel-default" id="dropdown">
-								<a data-toggle="collapse" href="#dropdown-lvl1" aria-expanded="true" data-page="equipamentos"> <!-- Open aria-expanded="true" -->
+								<a data-toggle="collapse" href="#dropdown-lvl1" aria-expanded="true" data-page="equipamentos" data-type="category"> <!-- Open aria-expanded="true" -->
 									 Equipamentos <span class="fa fa-caret-down"></span>
 								</a>
 								<!-- Dropdown level 1 -->
 								<div id="dropdown-lvl1" class="panel-collapse collapse in"> <!-- Open class = 'in' -->
 									<div class="panel-body">
 										<ul class="nav navbar-nav">
-											<li><a data-page="novos">Novos</a></li>
+											<li><a data-page="novos" data-type="subcategory">Novos</a></li>
 											<!-- Dropdown level 2 -->
 											<li class="panel panel-default" id="dropdown">
-												<a data-toggle="collapse" href="#dropdown-lvl2" data-page="seminovos">
+												<a data-toggle="collapse" href="#dropdown-lvl2" data-page="seminovos" data-type="subcategory">
 													Seminovos <span class="fa fa-caret-left"></span>
 												</a>
 												<div id="dropdown-lvl2" class="panel-collapse collapse">
 													<div class="panel-body">
 														<ul class="nav navbar-nav">
-															<li><a data-page="">Imagens</a></li>
-															<li><a data-page="">CR</a></li>
+															<li><a data-page="imagens" data-type="subsubcategory">Imagens</a></li>
+															<li><a data-page="cr" data-type="subsubcategory">CR</a></li>
 														</ul>
 													</div>
 												</div>
 											</li>
 											<li>
-												<a data-page="locacao-equipamentos">
+												<a data-page="locação de equipamentos" data-type="subcategory">
 													Locação de Equipamentos
 												</a>
 											</li>
@@ -146,7 +146,7 @@
 									</div>
 								</div>
 							</li>
-							<li><a data-page="proteses">Próteses</a></li>
+							<li><a data-page="proteses" data-type="category">Próteses</a></li>
 						</ul>
 					</div><!-- /.navbar-collapse -->
 				</nav>
@@ -173,10 +173,15 @@
 <script type="text/javascript">
 	$(document).ready(function()
 	{
-		$.get('soluciones/equipamentos.php', function(data)
-		{
-			$("#content-scroll").html(data).hide().fadeIn();
-		});
+		$.post('functions/data-products.php',
+	    {
+	        type: 'category',
+	        param: 'equipamentos'
+	    },
+	    function(data)
+	    {
+	        $("#content-scroll").html(data).hide().fadeIn();
+	    });
 
 		var $nav = $('.nav.navbar-nav');
 		$nav.find('a').click(function()
@@ -184,14 +189,19 @@
 			$nav.find('a.active').removeClass('active');
 			$(this).addClass('active');
 
+			var type = $(this).data('type');
 			var page = $(this).data('page');
-			if (page != '' && page != undefined && page != null)
+			if (page != '' && type != '')
 			{
-				$.get('soluciones/'+page+'.php', function(data)
-				{
-					$("#content-scroll").html(data).hide().fadeIn();
-				});
-				// $("#content-scroll").load('soluciones/'+page+'.php').hide().fadeIn();
+				$.post('functions/data-products.php',
+			    {
+			        type: type,
+			        param: page
+			    },
+			    function(data)
+			    {
+			        $("#content-scroll").html(data).hide().fadeIn();
+			    });
 			}
 		});
 
@@ -199,13 +209,6 @@
 		{
 			$(this).find('span').toggleClass('fa-caret-left fa-caret-down');
 		});
-
-		$('.product-thumb-info-image').on('click', function(event)
-		{
-	        event.preventDefault();
-	        $('#product_view').modal('show');
-	    });
-
 	});
 </script>
 

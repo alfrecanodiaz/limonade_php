@@ -39,7 +39,8 @@
 	    margin: 5px 5px 0;
 	}
 	.product_view .modal-dialog {
-		max-width: 800px;
+		/*max-width: 800px;*/
+		max-width: 1100px;
 	}
 	@media (min-width: 992px) {
 		.product_view .modal-dialog {
@@ -111,7 +112,7 @@
 				<nav class="navbar navbar-default" role="navigation">
 					<!-- Main Menu -->
 					<div class="side-menu-container">
-						<ul class="nav navbar-nav">
+						<ul class="nav navbar-nav" style="width: 100%;">
 							<!-- Dropdown-->
 							<li class="panel panel-default" id="dropdown">
 								<a data-toggle="collapse" href="#dropdown-lvl1" aria-expanded="true" data-page="equipamentos"> <!-- Open aria-expanded="true" -->
@@ -156,7 +157,7 @@
 
 			<div role="main" class="main shop">
 				<div id="content-scroll" class="container">
-					
+					<!-- Content Load -->
 				</div>
 			</div>
 
@@ -172,7 +173,7 @@
 <script type="text/javascript">
 	$(document).ready(function()
 	{
-		$.get( 'soluciones/equipamentos.php', function(data)
+		$.get('soluciones/equipamentos.php', function(data)
 		{
 			$("#content-scroll").html(data).hide().fadeIn();
 		});
@@ -186,7 +187,7 @@
 			var page = $(this).data('page');
 			if (page != '' && page != undefined && page != null)
 			{
-				$.get( 'soluciones/'+page+'.php', function(data)
+				$.get('soluciones/'+page+'.php', function(data)
 				{
 					$("#content-scroll").html(data).hide().fadeIn();
 				});

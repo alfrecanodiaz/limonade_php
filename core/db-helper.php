@@ -3,7 +3,7 @@
 function get_products_by_category( $cat )
 {
 	global $conn;
-	$q = "SELECT * FROM productos WHERE categoria = '$cat' ORDER BY subcategoria ASC, linea ASC, nombre ASC";
+	$q = "SELECT * FROM productos WHERE categoria = '$cat' ORDER BY subcategoria ASC, subsubcategoria ASC, linea ASC, nombre ASC";
 	$data = $conn->query($q);
 	$conn->close();
 	return $data;
@@ -12,7 +12,16 @@ function get_products_by_category( $cat )
 function get_products_by_subcategory( $sub )
 {
 	global $conn;
-	$q = "SELECT * FROM productos WHERE subcategoria = '$sub' ORDER BY linea ASC, nombre ASC";
+	$q = "SELECT * FROM productos WHERE subcategoria = '$sub' ORDER BY subsubcategoria ASC, linea ASC, nombre ASC";
+	$data = $conn->query($q);
+	$conn->close();
+	return $data;
+}
+
+function get_products_by_subsubcategory( $ssub )
+{
+	global $conn;
+	$q = "SELECT * FROM productos WHERE subsubcategoria = '$ssub' ORDER BY linea ASC, nombre ASC";
 	$data = $conn->query($q);
 	$conn->close();
 	return $data;
@@ -26,8 +35,3 @@ function get_products_by_line( $line )
 	$conn->close();
 	return $data;
 }
-
-// function format_product_name( $name )
-// {
-// 	return str_replace( ' ', '-', $name );
-// }

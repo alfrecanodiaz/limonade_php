@@ -36,7 +36,7 @@ function print_item( $item )
 	else if( file_exists( $_SERVER[ 'DOCUMENT_ROOT' ].$src.".jpg" ) )
 		$src .= ".jpg";
 	else
-		$src = '';
+		$src = '';//sin imagen agregar
 	?>
 		<li class="col-md-3 col-sm-6 col-xs-12 product">
 			<!-- <a href="">
@@ -52,7 +52,7 @@ function print_item( $item )
 					</span>
 				</a>
 				<span class="product-thumb-info-content">
-					<a href="">
+					<a href="#">
 						<h4><?=$item["nombre"]?></h4>
 						<span class="price">
 						</span>
@@ -69,10 +69,10 @@ function print_modal( $item )
 		<div class="modal fade product_view" id="product_<?=$item['id']?>">
 		    <div class="modal-dialog">
 		        <div class="modal-content">
-		            <!-- <div class="modal-header">
+		            <div class="modal-header" style="border-bottom: none; padding: 5px;">
 		                <a href="#" data-dismiss="modal" class="class pull-right"><span class="glyphicon glyphicon-remove"></span></a>
-		                <h3 class="modal-title"><?=$item['nombre']?></h3>
-		            </div> -->
+		                <!-- <h3 class="modal-title"><?=$item['nombre']?></h3> -->
+		            </div>
 		            <div class="modal-body">
 		                <div class="row">
 		                    <div class="col-md-6 product_img">

@@ -79,7 +79,13 @@
 			<div class="col-md-12">
 				<h4 class="mt-xlg mb-none text-uppercase">Equipamentos <strong>Hospitalares</strong></h4>
 
-				<h4 class="mt-xlg mb-none text-uppercase">Smartline</h4>
+				<?php
+					include ( 'core/db-config.php' );
+					include ( 'core/db-helper.php' );
+					include ( 'core/products.php' );
+				?>
+
+				<!-- <h4 class="mt-xlg mb-none text-uppercase">Smartline</h4>
 				
 				
 				<div class="row">
@@ -398,11 +404,8 @@
 							</div>
 						</li>
 					</ul>
-				</div>
-				
-				<!-- <div class="embed-responsive embed-responsive-16by9">
-					<iframe frameborder="0" allowfullscreen="" src="http://www.youtube.com/embed/jNLQrnWAg5o?showinfo=0&amp;wmode=opaque"></iframe>
 				</div> -->
+
 			</div>
 		</div>
 	</div>

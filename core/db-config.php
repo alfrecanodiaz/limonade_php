@@ -1,11 +1,11 @@
 <?php
 
-$server = "localhost";
-$user = "dev";
-$pass = "dev";
-$db = "rd_medical";
+$servername = "localhost";
+$username = "dev";
+$password = "dev";
+$dbname = "rd_medical";
 
-$conn = new mysqli( $server, $user, $pass, $db );
+$conn = new mysqli( $servername, $username, $password, $dbname );
 $conn->set_charset( "utf8" );
 
 if ( $conn->connect_error )

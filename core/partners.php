@@ -35,7 +35,7 @@ function print_item( $item )
 	?>
 		<li class="col-md-3 col-sm-6 col-xs-12">
 			<div class="portfolio-item">
-				<a href="#" target="_blank">
+				<a href="#">
 					<span class="thumb-info">
 						<span class="thumb-info-wrapper">
 							<img src="<?=$src?>" class="img-responsive" alt="">

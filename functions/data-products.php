@@ -49,6 +49,7 @@ if ( $data->num_rows )
 		{
 			$html .= close_container();
 			$html .= print_container();
+			$count = 0;
 		}
 
 		$html .= print_item( $row );

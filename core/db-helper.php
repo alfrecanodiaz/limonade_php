@@ -35,3 +35,12 @@ function get_products_by_line( $line )
 	$conn->close();
 	return $data;
 }
+
+function get_products_by_partner( $part )
+{
+	global $conn;
+	$q = "SELECT * FROM productos WHERE proveedor = '$part' ORDER BY linea ASC, nombre ASC";
+	$data = $conn->query($q);
+	$conn->close();
+	return $data;
+}

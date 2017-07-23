@@ -40,7 +40,7 @@ if ( $data->num_rows )
 		}
 
 		$html .= print_item( $row );
-		// $html .= print_modal( $row );
+		$html .= print_modal( $row );
 
 		$count++;
 	}

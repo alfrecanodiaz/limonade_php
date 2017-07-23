@@ -29,7 +29,6 @@ function close_container()
 
 function print_item( $item )
 {
-	// $src = "img/products/".format_product_name( $item["nombre"] );
 	$src = "/img/products/".str_replace( ' ', '-', $item["nombre"] );
 	if ( file_exists( $_SERVER[ 'DOCUMENT_ROOT' ].$src.".png" ) )
 		$src .= ".png";
@@ -39,8 +38,6 @@ function print_item( $item )
 		$src = '';//sin imagen agregar
 	?>
 		<li class="col-md-3 col-sm-6 col-xs-12 product">
-			<!-- <a href="">
-			</a> -->
 			<span class="product-thumb-info">
 				<a data-toggle="modal" data-target="#product_<?=$item['id']?>">
 					<span class="product-thumb-info-image">
@@ -52,7 +49,7 @@ function print_item( $item )
 					</span>
 				</a>
 				<span class="product-thumb-info-content">
-					<a href="#">
+					<a data-toggle="modal" data-target="#product_<?=$item['id']?>">
 						<h4><?=$item["nombre"]?></h4>
 						<span class="price">
 						</span>
@@ -71,60 +68,16 @@ function print_modal( $item )
 		        <div class="modal-content">
 		            <div class="modal-header" style="border-bottom: none; padding: 5px;">
 		                <a href="#" data-dismiss="modal" class="class pull-right"><span class="glyphicon glyphicon-remove"></span></a>
-		                <!-- <h3 class="modal-title"><?=$item['nombre']?></h3> -->
 		            </div>
 		            <div class="modal-body">
 		                <div class="row">
 		                    <div class="col-md-6 product_img">
-		                        <!-- <img src="http://img.bbystatic.com/BestBuy_US/images/products/5613/5613060_sd.jpg" class="img-responsive"> -->
 		                        <?php print_slider( $item ) ?>
 		                    </div>
 		                    <div class="col-md-6 product_content">
 		                    	<h3 class="modal-product-title"><?=$item['nombre']?></h3>
 		                        <h4 class="modal-product-subtitle"><?=$item['tipo']?></h4>
-		                        <!-- <div class="rating">
-		                            <span class="glyphicon glyphicon-star"></span>
-		                            <span class="glyphicon glyphicon-star"></span>
-		                            <span class="glyphicon glyphicon-star"></span>
-		                            <span class="glyphicon glyphicon-star"></span>
-		                            <span class="glyphicon glyphicon-star"></span>
-		                            (10 reviews)
-		                        </div> -->
 		                        <p><?=$item['descripcion']?></p>
-		                        <!-- <h3 class="cost"><span class="glyphicon glyphicon-usd"></span> 75.00 <small class="pre-cost"><span class="glyphicon glyphicon-usd"></span> 60.00</small></h3>
-		                        <div class="row">
-		                            <div class="col-md-4 col-sm-6 col-xs-12">
-		                                <select class="form-control" name="select">
-		                                    <option value="" selected="">Color</option>
-		                                    <option value="black">Black</option>
-		                                    <option value="white">White</option>
-		                                    <option value="gold">Gold</option>
-		                                    <option value="rose gold">Rose Gold</option>
-		                                </select>
-		                            </div>
-		                            <div class="col-md-4 col-sm-6 col-xs-12">
-		                                <select class="form-control" name="select">
-		                                    <option value="">Capacity</option>
-		                                    <option value="">16GB</option>
-		                                    <option value="">32GB</option>
-		                                    <option value="">64GB</option>
-		                                    <option value="">128GB</option>
-		                                </select>
-		                            </div>
-		                            <div class="col-md-4 col-sm-12">
-		                                <select class="form-control" name="select">
-		                                    <option value="" selected="">QTY</option>
-		                                    <option value="">1</option>
-		                                    <option value="">2</option>
-		                                    <option value="">3</option>
-		                                </select>
-		                            </div>
-		                        </div>
-		                        <div class="space-ten"></div>
-		                        <div class="btn-ground">
-		                            <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-shopping-cart"></span> Add To Cart</button>
-		                            <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-heart"></span> Add To Wishlist</button>
-		                        </div> -->
 		                    </div>
 		                </div>
 		            </div>
@@ -172,7 +125,6 @@ function print_slider( $item )
 
 function get_products_images( $product )
 {
-	// $product = format_product_name( $product );
 	$product = str_replace( ' ', '-', $product );
 	$dir = $_SERVER[ 'DOCUMENT_ROOT' ]."/img/products/$product";
 	return glob( "$dir/*.{jpg,png}", GLOB_BRACE );

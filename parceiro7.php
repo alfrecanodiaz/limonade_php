@@ -12,6 +12,8 @@
 
 <?php startblock('styles') ?>
 
+<link rel="stylesheet" type="text/css" href="css/products.css">
+
 <?php endblock() ?>
 
 <?php startblock('content') ?>

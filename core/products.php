@@ -29,13 +29,7 @@ function close_container()
 
 function print_item( $item )
 {
-	$src = "/img/products/".str_replace( ' ', '-', $item["nombre"] );
-	if ( file_exists( $_SERVER[ 'DOCUMENT_ROOT' ].$src.".png" ) )
-		$src .= ".png";
-	else if( file_exists( $_SERVER[ 'DOCUMENT_ROOT' ].$src.".jpg" ) )
-		$src .= ".jpg";
-	else
-		$src = '';//sin imagen agregar
+	$src = get_product_single_image( $item[ "id" ] );
 	?>
 		<li class="col-md-3 col-sm-6 col-xs-12 product">
 			<span class="product-thumb-info">
@@ -93,7 +87,7 @@ function print_slider( $item )
 		<div id="carousel-<?=$item['id']?>" class="carousel slide" data-ride="carousel">
 			<div class="carousel-inner">
 	<?php
-		$images = get_products_images( $item[ 'nombre' ] );
+		$images = get_products_images( $item[ 'id' ] );
 		$count = 0;
 		if ( !empty( $images ) ) {
 		    foreach ( $images as $key => $img ) {
@@ -107,8 +101,9 @@ function print_slider( $item )
 		}
 		else
 		{
+			$src = get_product_single_image( $item[ "id" ] );
 	?>
-			<div class="item active"><img src="img/sin_imagen.jpg"></div>
+			<div class="item active"><img src="<?=$src?>"></div>
 	<?php
 		}
 	?>
@@ -123,10 +118,22 @@ function print_slider( $item )
 	<?php
 }
 
-function get_products_images( $product )
+function get_product_single_image( $id )
 {
-	$product = str_replace( ' ', '-', $product );
-	$dir = $_SERVER[ 'DOCUMENT_ROOT' ]."/img/products/$product";
+	$src = "/img/products/$id";
+	if ( file_exists( $_SERVER[ 'DOCUMENT_ROOT' ] . $src . ".png" ) )
+		$src .= ".png";
+	else if( file_exists( $_SERVER[ 'DOCUMENT_ROOT' ] . $src . ".jpg" ) )
+		$src .= ".jpg";
+	else
+		$src = '';//sin imagen agregar
+
+	return $src;
+}
+
+function get_products_images( $id )
+{
+	$dir = $_SERVER[ 'DOCUMENT_ROOT' ]."/img/products/$id";
 	return glob( "$dir/*.{jpg,png}", GLOB_BRACE );
 }
 

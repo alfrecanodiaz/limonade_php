@@ -49,20 +49,20 @@
 						<ul class="nav navbar-nav" style="width: 100%;">
 							<!-- Dropdown-->
 							<li class="panel panel-default" id="dropdown">
-								<a data-toggle="collapse" href="#dropdown-lvl1" aria-expanded="true" data-page="equipamentos" data-type="category"> <!-- Open aria-expanded="true" -->
+								<a data-toggle="collapse" href="#equipamentos-lvl1" aria-expanded="true" data-page="equipamentos" data-type="category"> <!-- Open aria-expanded="true" -->
 									 Equipamentos <span class="fa fa-caret-down"></span>
 								</a>
 								<!-- Dropdown level 1 -->
-								<div id="dropdown-lvl1" class="panel-collapse collapse in"> <!-- Open class = 'in' -->
+								<div id="equipamentos-lvl1" class="panel-collapse collapse in"> <!-- Open class = 'in' -->
 									<div class="panel-body">
 										<ul class="nav navbar-nav">
 											<li><a data-page="novos" data-type="subcategory">Novos</a></li>
 											<!-- Dropdown level 2 -->
 											<li class="panel panel-default" id="dropdown">
-												<a data-toggle="collapse" href="#dropdown-lvl2" data-page="seminovos" data-type="subcategory">
+												<a data-toggle="collapse" href="#equipamentos-lvl2" data-page="seminovos" data-type="subcategory">
 													Seminovos <span class="fa fa-caret-left"></span>
 												</a>
-												<div id="dropdown-lvl2" class="panel-collapse collapse">
+												<div id="equipamentos-lvl2" class="panel-collapse collapse">
 													<div class="panel-body">
 														<ul class="nav navbar-nav">
 															<li><a data-page="imagens" data-type="subsubcategory">Imagens</a></li>
@@ -80,7 +80,25 @@
 									</div>
 								</div>
 							</li>
-							<li><a data-page="proteses" data-type="category">Próteses</a></li>
+							<li class="panel panel-default" id="dropdown">
+								<a data-toggle="collapse" href="#ortopedia-lvl1" data-page="ortopedia" data-type="category">
+									 Ortopedia <span class="fa fa-caret-left"></span>
+								</a>
+								<!-- Dropdown level 1 -->
+								<div id="ortopedia-lvl1" class="panel-collapse collapse">
+									<div class="panel-body">
+										<ul class="nav navbar-nav">
+											<li><a data-page="próteses de quadril" data-type="subcategory">Próteses de Quadril</a></li>
+											<li><a data-page="próteses de joelho" data-type="subcategory">Próteses de Joelho</a></li>
+											<li><a data-page="próteses de ombro" data-type="subcategory">Próteses de Ombro</a></li>
+											<li><a data-page="não convencional" data-type="subcategory">Não Convencional</a></li>
+											<li><a data-page="fixação intramedular" data-type="subcategory">Fixação Intramedular</a></li>
+											<li><a data-page="fixação interna" data-type="subcategory">Fixação Interna</a></li>
+											<li><a data-page="fixação externa" data-type="subcategory">Fixação Externa</a></li>
+											<li><a data-page="biomateriais" data-type="subcategory">Biomateriais</a></li>
+										</ul>
+									</div>
+								</div>
 						</ul>
 					</div><!-- /.navbar-collapse -->
 				</nav>

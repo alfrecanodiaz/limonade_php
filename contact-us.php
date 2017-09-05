@@ -99,7 +99,7 @@
 					<h4 class="heading-primary">Nosso <strong>Escritório</strong></h4>
 					<ul class="list list-icons list-icons-style-3 mt-xlg">
 						<li><i class="fa fa-map-marker"></i> <strong>Address:</strong> Gral. Abdón Caballero Nº 489 casi Ybyturusu Campo Grande - Luque</li>
-						<li><i class="fa fa-phone"></i> <strong>Phone:</strong> (+595) 994 847395</li>
+						<li><i class="fa fa-phone"></i> <strong>Phone:</strong>(+595) 981 850663</li>
 						<li><i class="fa fa-envelope"></i> <strong>Email:</strong> <a href="mailto:contacto@rdmedical.com.py">contacto@rdmedical.com.py</a></li>
 					</ul>
 

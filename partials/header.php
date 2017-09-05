@@ -11,18 +11,18 @@
 				</div>
 				<div class="header-column">
 					<div class="header-row">
-						
+
 						<button class="btn header-btn-collapse-nav btn-cs" data-toggle="collapse" data-target=".header-nav-main">
 							<i class="fa fa-bars"></i>
 						</button>
 						<nav class="header-nav-top">
 							<ul class="nav nav-pills">
 								<li>
-									<span class="ws-nowrap"><i class="fa fa-phone"></i> (+595) 994 847395</span>
+									<span class="ws-nowrap"><i class="fa fa-phone"></i>(+595) 981 850663</span>
 								</li>
 								<li>
 									<a href="#" class="dropdown-menu-toggle" id="dropdownLanguage" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-										<img src="img/blank.gif" class="flag flag-<?= get_current_flag(); ?>" alt="Espanõl" /> 
+										<img src="img/blank.gif" class="flag flag-<?= get_current_flag(); ?>" alt="Espanõl" />
 										<?= get_current_lang(); ?>
 										<i class="fa fa-angle-down"></i>
 									</a>
@@ -80,7 +80,7 @@
 											</a>
 											<ul class="dropdown-menu">
 												<?php foreach ( get_all_headers( 'dropdown' ) as $key => $value ) { ?>
-													<li><a href="<?= get_url_page( $value ); ?>"><?= $key; ?></a></li>	
+													<li><a href="<?= get_url_page( $value ); ?>"><?= $key; ?></a></li>
 												<?php } ?>
 											</ul>
 										</li>
@@ -100,7 +100,7 @@
 												</li>
 											<?php } ?>
 										<?php } ?>
-																				
+
 									</ul>
 								</nav>
 							</div>

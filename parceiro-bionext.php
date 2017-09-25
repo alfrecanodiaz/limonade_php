@@ -39,15 +39,13 @@
 	<div class="container" style="text-align: justify !important;">
 		<div class="row">
 			<div class="col-md-4">
-				
-					<div>
-						<span class="img-thumbnail">
-							<br>
-							<img alt="" height="300" class="img-responsive" src="img/logos/logo-06.png">
-							<br>
-						</span>
-					</div>
-					
+				<div>
+					<span class="img-thumbnail">
+						<br>
+						<img alt="" height="300" class="img-responsive" src="img/logos/logo-06.png">
+						<br>
+					</span>
+				</div>
 			</div>
 			<div class="col-md-8">
 
@@ -123,14 +121,6 @@
 		</div>
 	</div>
 </div>
-
-		<div class="row">
-			<div class="col-md-12">
-				<hr>
-			</div>
-		</div>
-		</div>
-	</div>
 
 	
 

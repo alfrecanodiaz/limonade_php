@@ -49,7 +49,7 @@
 						<ul class="nav navbar-nav" style="width: 100%;">
 							<!-- Dropdown-->
 							<li class="panel panel-default" id="dropdown">
-								<a data-toggle="collapse" href="#equipamentos-lvl1" aria-expanded="true" data-page="equipamentos" data-type="category"> <!-- Open aria-expanded="true" -->
+								<a data-toggle="collapse" href="#equipamentos-lvl1" aria-expanded="true" data-page="equipamentos" data-type="category" class="active"> <!-- Open aria-expanded="true" -->
 									 Equipamentos <span class="fa fa-caret-down"></span>
 								</a>
 								<!-- Dropdown level 1 -->
@@ -106,7 +106,21 @@
 
 		</div>
 		<div class="col-md-9">
-
+			<div class="row">
+				<div class="form-group" style="padding-right: 15px; padding-left: 15px;">
+					<div class="col-md-5">
+						<label>Marca</label>
+						<input type="text" value="" class="form-control" name="marca" id="marca" placeholder="Ingrese la Marca">
+					</div>
+					<div class="col-md-5">
+						<label>Tipo de Equipo</label>
+						<input type="text" value="" class="form-control" name="tipo_equipo" id="tipo_equipo" placeholder="Ingrese el Tipo de Equipo">
+					</div>
+					<div class="col-md-2 pull-right" style="margin-top: 24px;">
+						<button class="btn btn-primary" id="search-submit">Buscar</button>
+					</div>
+				</div>
+			</div>
 			<div role="main" class="main shop">
 				<div id="content-scroll" class="container">
 					<!-- Content Load -->
@@ -125,17 +139,20 @@
 <script type="text/javascript">
 	$(document).ready(function()
 	{
+		var $content = $("#content-scroll");
+		var $nav = $('.nav.navbar-nav');
+
 		$.post('functions/data-products.php',
 	    {
+	    	filter: 0,
 	        type: 'category',
-	        param: 'equipamentos'
+	        param: 'equipamentos',
 	    },
 	    function(data)
 	    {
-	        $("#content-scroll").html(data).hide().fadeIn();
+	        $content.html(data).hide().fadeIn();
 	    });
 
-		var $nav = $('.nav.navbar-nav');
 		$nav.find('a').click(function()
 		{
 			$nav.find('a.active').removeClass('active');
@@ -147,12 +164,13 @@
 			{
 				$.post('functions/data-products.php',
 			    {
+			    	filter: 0,
 			        type: type,
 			        param: page
 			    },
 			    function(data)
 			    {
-			        $("#content-scroll").html(data).hide().fadeIn();
+			        $content.html(data).hide().fadeIn();
 			    });
 			}
 		});
@@ -160,6 +178,29 @@
 		$('.panel.panel-default').find('a').click(function()
 		{
 			$(this).find('span').toggleClass('fa-caret-left fa-caret-down');
+		});
+
+		$('#search-submit').click(function(e)
+		{
+			var marca = $('#marca').val();
+			var tipo_equipo = $('#tipo_equipo').val();
+			var $element = $nav.find('a.active');
+			console.log(marca + ' - ' + tipo_equipo);
+			if (marca != '' || tipo_equipo != '')
+			{
+				$.post('functions/data-products.php',
+			    {
+			    	filter: 1,
+			    	type: $element.data('type'),
+			        param: $element.data('page'),
+			        proveedor: marca,
+			        ssub: tipo_equipo
+			    },
+			    function(data)
+			    {
+			        $content.html(data).hide().fadeIn();
+			    });
+			}
 		});
 	});
 </script>

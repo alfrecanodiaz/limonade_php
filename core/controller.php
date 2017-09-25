@@ -115,10 +115,14 @@ function get_all_headers( $position ) {
 	} else if ( $position == 'dropdown' ) {
 		return array(
 			// 'Alfamed' => 'parceiro3',
-			'Baumer' => 'parceiro2',
-			// 'CDK' => 'parceiro4',
-			'Bionext' => 'parceiro6',
-			'Barrfab' => 'parceiro7'
+			'Baumer' => 'parceiro-baumer',
+			'Barrfab' => 'parceiro-barrfab',
+			'Bionext' => 'parceiro-bionext',
+			'CDK' => 'parceiro-cdk',
+			'Konex' => 'parceiro-konex',
+			'KTK' => 'parceiro-ktk',
+			'Novitech' => 'parceiro-novitech',
+			'Olidef' => 'parceiro-olidef'
 		);
 	} else {
 		return null;

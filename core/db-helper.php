@@ -44,3 +44,30 @@ function get_products_by_partner( $part )
 	$conn->close();
 	return $data;
 }
+
+function filter_products( $type, $param, $ssub, $part )
+{
+	global $conn;
+	switch ($type)
+	{
+		case 'category':
+			$q = "SELECT * FROM productos WHERE categoria = '$param'";
+			break;
+		case 'subcategory':
+			$q = "SELECT * FROM productos WHERE subcategoria = '$param'";
+			break;
+	}
+
+	if( $ssub == '' && $part == '' )
+		return null;
+	
+	if( $ssub != '' )
+		$q .= " AND subsubcategoria = '$ssub'";
+	if ( $part != '' )
+		$q .= " AND proveedor = '$part'";
+
+	$q .= " ORDER BY linea ASC, nombre ASC";
+	$data = $conn->query($q);
+	$conn->close();
+	return $data;
+}

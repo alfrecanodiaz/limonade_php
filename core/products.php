@@ -141,3 +141,64 @@ function get_real_path( $src )
 {
 	return strstr( $src, 'img' );
 }
+
+function print_message()
+{
+	?>
+		<div class="row" id="first">
+			<div class="col-md-8 text-center" style="margin-top: 20px;">
+				<p style="font-size: 20px;font-weight: bold;">No se han encontrado productos disponibles.</p>
+			</div>
+		</div>
+	<?php
+}
+
+function make_html( $data )
+{
+	$html = '';
+
+	if ( $data->num_rows )
+	{
+		$linea = '';
+		$count = 0;
+		$init = true;
+		while( $row = $data->fetch_assoc() )
+		{
+			if ( $init )
+			{
+				$linea = $row[ "linea" ];
+				$html .= print_header( $row[ "linea" ] );
+				$html .= print_container();
+				$init = false;
+			}
+
+			if ( $linea != $row[ "linea" ] )
+			{
+				$linea = $row[ "linea" ];
+				$html .= close_container();
+				$html .= print_header( $row[ "linea" ] );
+				$html .= print_container();
+				$count = 0;
+			}
+
+			if ( $count == 3 )
+			{
+				$html .= close_container();
+				$html .= print_container();
+				$count = 0;
+			}
+
+			$html .= print_item( $row );
+			$html .= print_modal( $row );
+
+			$count++;
+		}
+		$html .= close_container();
+	}
+	else
+	{
+		$html .= print_message();
+	}
+
+	return $html;
+}

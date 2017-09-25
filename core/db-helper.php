@@ -45,6 +45,15 @@ function get_products_by_partner( $part )
 	return $data;
 }
 
+function get_products_by_name( $product )
+{
+	global $conn;
+	$q = "SELECT * FROM productos WHERE nombre LIKE '$product%' ORDER BY nombre ASC";
+	$data = $conn->query($q);
+	$conn->close();
+	return $data;
+}
+
 function filter_products( $type, $param, $ssub, $part )
 {
 	global $conn;

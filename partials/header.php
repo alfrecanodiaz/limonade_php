@@ -18,6 +18,14 @@
 						<nav class="header-nav-top">
 							<ul class="nav nav-pills">
 								<li>
+									<form method="post" action="search.php" id="search-form">
+										<div class="inner-addon right-addon">
+										    <i class="glyphicon glyphicon-search" id="search-submit"></i>
+										    <input type="text" name="product" placeholder="Buscar Producto..." class="form-control">
+										</div>
+									</form>
+								</li>
+								<li>
 									<span class="ws-nowrap"><i class="fa fa-phone"></i>(+595) 981 850663</span>
 								</li>
 								<li>

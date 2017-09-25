@@ -117,7 +117,7 @@
 						<input type="text" value="" class="form-control" name="tipo_equipo" id="tipo_equipo" placeholder="Ingrese el Tipo de Equipo">
 					</div>
 					<div class="col-md-2 pull-right" style="margin-top: 24px;">
-						<button class="btn btn-primary" id="search-submit">Buscar</button>
+						<button class="btn btn-primary" id="filter-submit">Buscar</button>
 					</div>
 				</div>
 			</div>
@@ -180,7 +180,7 @@
 			$(this).find('span').toggleClass('fa-caret-left fa-caret-down');
 		});
 
-		$('#search-submit').click(function(e)
+		$('#filter-submit').click(function(e)
 		{
 			var marca = $('#marca').val();
 			var tipo_equipo = $('#tipo_equipo').val();

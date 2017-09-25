@@ -161,6 +161,18 @@ if ( isset( $_GET[ 'lang' ] ) ) {
 	<!-- Theme Initialization Files -->
 	<script src="js/theme.init.js"></script>
 
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			var $form = $('#search-form');
+
+			$('#search-submit').click(function(e)
+			{
+				$form.submit();
+			});
+		});
+	</script>
+
 	<!-- =========================================
     Pages Script Section
     ========================================== -->

@@ -142,12 +142,16 @@ function get_real_path( $src )
 	return strstr( $src, 'img' );
 }
 
-function print_message()
+function print_message($search)
 {
 	?>
 		<div class="row" id="first">
-			<div class="col-md-8 text-center" style="margin-top: 20px;">
-				<p style="font-size: 20px;font-weight: bold;">No se han encontrado productos disponibles.</p>
+			<?php if($search) { ?>
+				<div class="col-md-12 text-center" style="margin-top: 20px;margin-bottom: 20px;">
+			<?php } else { ?>
+				<div class="col-md-8 text-center" style="margin-top: 20px;">
+			<?php } ?>
+				<p style="font-size: 18px;">No se han encontrado productos disponibles.</p>
 			</div>
 		</div>
 	<?php
@@ -197,7 +201,47 @@ function make_html( $data )
 	}
 	else
 	{
-		$html .= print_message();
+		$html .= print_message(false);
+	}
+
+	return $html;
+}
+
+function make_search( $data )
+{
+	$html = '';
+
+	if ( $data->num_rows )
+	{
+		$count = 0;
+		$init = true;
+		while( $row = $data->fetch_assoc() )
+		{
+			if ( $init )
+			{
+				$html .= print_header( 'Resultados de la busqueda' );
+				$html .= print_container();
+				$init = false;
+			}
+
+			if ( $count == 4 )
+			{
+				$html .= close_container();
+				$html .= print_container();
+				$count = 0;
+			}
+
+			$html .= print_item( $row );
+			$html .= print_modal( $row );
+
+			$count++;
+		}
+		$html .= close_container();
+	}
+	else
+	{
+		$html .= print_header( 'Resultados de la busqueda' );
+		$html .= print_message(true);
 	}
 
 	return $html;

@@ -43,7 +43,7 @@
 				<div>
 					<span class="img-thumbnail">
 						
-						<img alt="" height="300" class="img-responsive" src="img/logos/logo-10.png">
+						<img alt="" height="300" class="img-responsive" src="img/logos/barrfab.png">
 					</span>
 				</div>
 				

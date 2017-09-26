@@ -41,7 +41,7 @@
 			<div class="col-md-4">
 				<div>
 					<span class="img-thumbnail">
-						<img alt="" height="300" class="img-responsive" src="img/logos/logo-3.png">
+						<img alt="" height="300" class="img-responsive" src="img/logos/cdk.png">
 					</span>
 				</div>	
 			</div>

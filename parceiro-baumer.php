@@ -42,7 +42,7 @@
 				<div>
 					<span class="img-thumbnail">
 						
-						<img alt="" height="300" class="img-responsive" src="img/logos/logo-1.png">
+						<img alt="" height="300" class="img-responsive" src="img/logos/baumer.png">
 
 					</span>
 				</div>

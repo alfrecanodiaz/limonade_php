@@ -54,18 +54,20 @@ function get_products_by_name( $product )
 	return $data;
 }
 
-function filter_products( $type, $param, $ssub, $part )
+function filter_products( /*$type, $param,*/ $ssub, $part )
 {
 	global $conn;
-	switch ($type)
-	{
-		case 'category':
-			$q = "SELECT * FROM productos WHERE categoria = '$param'";
-			break;
-		case 'subcategory':
-			$q = "SELECT * FROM productos WHERE subcategoria = '$param'";
-			break;
-	}
+	// switch ($type)
+	// {
+	// 	case 'category':
+	// 		$q = "SELECT * FROM productos WHERE categoria = '$param'";
+	// 		break;
+	// 	case 'subcategory':
+	// 		$q = "SELECT * FROM productos WHERE subcategoria = '$param'";
+	// 		break;
+	// }
+
+	$q = "SELECT * FROM productos WHERE nombre != ''";
 
 	if( $ssub == '' && $part == '' )
 		return null;

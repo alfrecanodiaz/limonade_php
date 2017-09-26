@@ -133,3 +133,8 @@ function dd( $arg ) {
     var_dump( $arg );
 	die();
 }
+
+function get_path( $folder, $file )
+{
+	return $_SERVER[ 'DOCUMENT_ROOT' ] . '/' . $folder . '/' .$file. '.php';
+}

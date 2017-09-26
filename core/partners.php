@@ -1,5 +1,168 @@
 <?php
 
+function print_header( $cat )
+{
+	?>
+		<div class="row" id="first">
+			<div class="col-md-6">
+				<h1 class="shop-title mb-none"><?=ucwords($cat)?></h1>
+			</div>
+		</div>
+	<?php
+}
+
+function print_container()
+{
+	?>
+		<div class="row">
+			<ul class="products product-thumb-info-list" data-plugin-masonry>
+	<?php
+}
+
+function close_container()
+{
+	?>
+			</ul>
+		</div>
+	<?php
+}
+
+function print_item( $partner )
+{
+	$src = get_partner_single_image( $partner );
+	?>
+		<li class="col-md-3 col-sm-6 col-xs-12 partner" data-partner="<?=$partner?>" data-type="partner">
+			<a class="partner-info">
+				<span class="product-thumb-info">
+					<span class="product-thumb-info-image">
+						<img alt="" class="img-responsive" src="<?=$src?>">
+					</span>
+				</span>
+			</a>
+		</li>
+	<?php
+}
+
+function get_partner_single_image( $partner )
+{
+	$src = "/img/logos/$partner";
+	if ( file_exists( $_SERVER[ 'DOCUMENT_ROOT' ] . $src . ".png" ) )
+		$src .= ".png";
+	else if( file_exists( $_SERVER[ 'DOCUMENT_ROOT' ] . $src . ".jpg" ) )
+		$src .= ".jpg";
+	else
+		$src = '';//sin imagen agregar
+
+	return $src;
+}
+
+function format_data_partner( $data )
+{
+	$partners = [];
+	while( $row = $data->fetch_assoc() )
+	{
+		if ( !in_array( $row[ "proveedor" ], $partners ) )
+			$partners[] = $row[ "proveedor" ];
+	}
+	return $partners;
+}
+
+function make_html( $data, $param )
+{
+	$html = '';
+
+	if ( $data->num_rows )
+	{
+		$count = 0;
+		$init = true;
+		$partners = format_data_partner( $data );
+		// while( $row = $data->fetch_assoc() )
+		foreach ($partners as $key => $partner)
+		{
+			if ( $init )
+			{
+				$html .= print_header( $param );
+				$html .= print_container();
+				$init = false;
+			}
+
+			if ( $count == 3 )
+			{
+				$html .= close_container();
+				$html .= print_container();
+				$count = 0;
+			}
+
+			$html .= print_item( $partner );
+
+			$count++;
+		}
+		$html .= close_container();
+	}
+
+	return $html;
+}
+
+function get_info()
+{
+	?>
+		<div class="row">
+			<div class="col-md-8 text-center partner-block" style="margin-top: 20px;">
+				<h4 class="shop-title">Ventajas de Alquilar Equipos con RD MEDICAL S.A.:</h4>
+				<ol style="text-align: left;">
+					<li>Trabajamos con el mejor precio del mercado, con marcas y modelos de</li>
+					reconocida experiencia.
+					<li>Garantizamos la entrega de los equipamientos sin defectos, pasando por
+					nuestro control de calidad que realiza revisiones periódicas.</li>
+					<li>Sustitución inmediata de los equipos si presentan defectos.</li>
+					<li>Fortalecemos el soporte técnico ofreciendo capacitaciones y
+					entrenamiento a los operadores.</li>
+					<li>Bajo costo de inversión, es decir, disminución del costo administrativo de
+					adquisición de uno nuevo.</li>
+					<li>Actualización tecnológica con bajo costo.</li>
+					<li>Pago de valores fijos durante el tiempo necesario de uso.</li>
+					<li>Reducción de gastos de mantenimientos preventivos y correctivos.</li>
+				</ol>
+				<?=print_newsletter()?>
+			</div>
+		</div>
+	<?php
+}
+
+function get_newsletter()
+{
+	?>
+		<div class="row">
+			<div class="col-md-8 text-center partner-block" style="margin-top: 20px;">
+				<?=print_newsletter()?>
+			</div>
+		</div>
+	<?php
+}
+
+function print_newsletter()
+{
+	?>
+		<div class="newsletter">
+			<h4 class="shop-title">Newsletter</h4>
+			<p>Acompanhe nossos recursos e tecnologia sempre em evolução. Insira o seu e-mail para receber nossa newsletter.</p>
+			<div class="alert alert-success hidden" id="newsletterSuccess">
+				<strong>Sucesso!</strong> Você foi adicionado a nossa Newsletter.
+			</div>
+			<div class="alert alert-danger hidden" id="newsletterError"></div>
+			<form id="newsletterForm" action="php/newsletter-subscribe.php" method="POST">
+				<div class="input-group">
+					<input class="form-control" placeholder="Seu e-mail" name="newsletterEmail" id="newsletterEmail" type="text">
+					<span class="input-group-btn">
+						<button class="btn btn-default" type="submit">Inscrever!</button>
+					</span>
+				</div>
+			</form>
+		</div>
+	<?php
+}
+
+/*
 function print_header( $str )
 {
 	?>
@@ -130,4 +293,4 @@ function get_products_images( $id )
 function get_real_path( $src )
 {
 	return strstr( $src, 'img' );
-}
+}*/

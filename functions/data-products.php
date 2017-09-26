@@ -6,7 +6,7 @@ include ( $_SERVER[ 'DOCUMENT_ROOT' ].'/core/products.php' );
 
 if ( $_POST[ "filter" ] )
 {
-	$data = filter_products( $_POST[ "type" ], $_POST[ "param" ], strtolower($_POST[ "ssub" ]), strtolower($_POST[ "proveedor" ]) );
+	$data = filter_products( /*$_POST[ "type" ], $_POST[ "param" ],*/ strtolower($_POST[ "ssub" ]), strtolower($_POST[ "proveedor" ]) );
 }
 else
 {
@@ -22,6 +22,10 @@ else
 
 		case 'subsubcategory':
 			$data = get_products_by_subsubcategory( $_POST[ "param" ] );
+			break;
+
+		case 'partner':
+			$data = get_products_by_partner( $_POST[ "param" ] );
 			break;
 	}
 }

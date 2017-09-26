@@ -42,7 +42,7 @@
 				<div>
 					<span class="img-thumbnail">
 						<br>
-						<img alt="" height="300" class="img-responsive" src="img/logos/logo-06.png">
+						<img alt="" height="300" class="img-responsive" src="img/logos/bionext.png">
 						<br>
 					</span>
 				</div>

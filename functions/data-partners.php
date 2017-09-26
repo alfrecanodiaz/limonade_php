@@ -4,47 +4,26 @@ include ( $_SERVER[ 'DOCUMENT_ROOT' ].'/core/db-config.php' );
 include ( $_SERVER[ 'DOCUMENT_ROOT' ].'/core/db-helper.php' );
 include ( $_SERVER[ 'DOCUMENT_ROOT' ].'/core/partners.php' );
 
-$data = get_products_by_partner( $_POST[ "param" ] );
-
-$html = '';
-
-if ( $data->num_rows )
+if ( $_POST[ "data" ] === 'native' )
 {
-	$linea = '';
-	$count = 0;
-	$init = true;
-	while( $row = $data->fetch_assoc() )
+	switch ( $_POST[ "type" ] )
 	{
-		if ( $init )
-		{
-			$linea = $row[ "linea" ];
-			$html .= print_header( $row[ "linea" ] );
-			$html .= print_container();
-			$init = false;
-		}
+		case 'category':
+			$data = get_products_by_category( $_POST[ "param" ] );
+			break;
 
-		if ( $linea != $row[ "linea" ] )
-		{
-			$linea = $row[ "linea" ];
-			$html .= close_container();
-			$html .= print_header( $row[ "linea" ] );
-			$html .= print_container();
-			$count = 0;
-		}
-
-		if ( $count == 4 )
-		{
-			$html .= close_container();
-			$html .= print_container();
-			$count = 0;
-		}
-
-		$html .= print_item( $row );
-		$html .= print_modal( $row );
-
-		$count++;
+		case 'subcategory':
+			$data = get_products_by_subcategory( $_POST[ "param" ] );
+			break;
 	}
-	$html .= close_container();
-}
 
-return $html;
+	return make_html( $data, $_POST[ "param" ] );
+}
+else if ( $_POST[ "data" ] === 'info' )
+{
+	return get_info();
+}
+else
+{
+	return get_newsletter();
+}

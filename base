@@ -1,0 +1,17 @@
+<?php content_for('title'); ?>
+
+<?php end_content_for(); ?>
+
+<?php content_for('meta'); ?>
+
+<?php end_content_for(); ?>
+
+<?php content_for('styles'); ?>
+
+<?php end_content_for(); ?>
+
+CONTENIDO
+
+<?php content_for('scripts'); ?>
+
+<?php end_content_for(); ?>

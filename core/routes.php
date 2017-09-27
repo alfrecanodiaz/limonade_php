@@ -1,0 +1,3 @@
+<?php
+
+dispatch('/', 'Controller::home');

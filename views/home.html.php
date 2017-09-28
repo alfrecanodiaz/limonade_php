@@ -10,6 +10,8 @@
 
 <?php content_for('styles'); ?>
 
+<?=Html::style('bootstrap.min.css');?>
+
 <style type="text/css">
 	p {
 		color:red;
@@ -28,6 +30,9 @@ surrounding raising my heart rate beyond 80bpm!
 <button id="button">Button</button>
 
 <?php content_for('scripts'); ?>
+
+<?=Html::script('jquery-3.2.1.min.js');?>
+<?=Html::script('bootstrap.min.js');?>
 
 <script type="text/javascript">
 	

@@ -1,17 +1,24 @@
 <?php
 
-function base_path() {
-	return $_SERVER[ 'DOCUMENT_ROOT' ].'/';
+function server_path() {
+	if (strpos($_SERVER['HTTP_HOST'], 'http') !== false) {
+	    return $_SERVER['HTTP_HOST'] . '/';
+	}
+	return 'http://' . $_SERVER['HTTP_HOST'] . '/';
 }
 
-function views_directory() {
-	return $_SERVER[ 'DOCUMENT_ROOT' ].'/views/';
+function public_dir() {
+	return server_path() . 'public/';
 }
 
-function src_directory() {
-	return $_SERVER[ 'DOCUMENT_ROOT' ].'/src/';
+function asset() {
+	return public_dir() . 'assets/';
 }
 
-function core_directory() {
-	return $_SERVER[ 'DOCUMENT_ROOT' ].'/core/';
+function js_dir() {
+	return public_dir() . 'js/';
+}
+
+function css_dir() {
+	return public_dir() . 'css/';
 }

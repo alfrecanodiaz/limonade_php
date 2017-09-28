@@ -2,19 +2,19 @@
 
 require_once 'lib/limonade.php';
 
-// Application code goes here
+#Application code goes here
 
-//mejorar, un aray con los nombres de los directorios y una funcion que haga merge de todos
-$config = glob('config/*.php');
-$core = glob('core/*.php');
-$files = array_merge($core, $config);
+$dirs = ['config', 'core', 'http'];
 
-foreach ($files as $filename) {
-    include_once $filename;
+foreach ($dirs as $dir) {
+	foreach (glob($dir.'/*.php') as $file) {
+		include_once $file;	
+	}
 }
 
 function autoload($class) {
 	include_once 'src/' . $class . '.php';
+	// include_once 'controllers/' . $class . '.php';
 }
 
 spl_autoload_register('autoload');

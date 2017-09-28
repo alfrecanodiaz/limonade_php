@@ -33,7 +33,7 @@
 	| 
 	*/
 
-	option('controllers_dir', dirname(__FILE__).'/src/');
+	option('controllers_dir', dirname(__FILE__).'/controllers/');
 
 	/*
 	|--------------------------------------------------------------------------

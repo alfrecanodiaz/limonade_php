@@ -1,5 +1,7 @@
 <?php content_for('title'); ?>
 
+<title>Prueba titulo</title>
+
 <?php end_content_for(); ?>
 
 <?php content_for('meta'); ?>
@@ -15,6 +17,8 @@
 </style>
 
 <?php end_content_for(); ?>
+
+<h1><?php echo $saludo; ?></h1>
 
 <p>
 Return often to receive updates about the trials and tribulations

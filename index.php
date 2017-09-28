@@ -4,7 +4,12 @@ require_once 'lib/limonade.php';
 
 // Application code goes here
 
-foreach (glob('core/*.php') as $filename) {
+//mejorar, un aray con los nombres de los directorios y una funcion que haga merge de todos
+$config = glob('config/*.php');
+$core = glob('core/*.php');
+$files = array_merge($core, $config);
+
+foreach ($files as $filename) {
     include_once $filename;
 }
 

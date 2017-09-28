@@ -4,7 +4,10 @@ class Controller
 {
 	public function home()
 	{
-		// return html('home.html.php', 'master.html.php');
+		$var = 'Prueba var';
+		// dd($var);
+		// dd($var, true);
+		set('saludo', $var);
 		return html('home.html.php');
 	}
 }

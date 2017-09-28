@@ -4,15 +4,25 @@
 
     <head>
 
-        <!-- Basic -->
+        <!-- =========================================
+        Global Meta Section
+        ========================================== -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <!-- =========================================
+        Page Title Section
+        ========================================== -->
 
         <?php if (isset($title)) echo $title; ?>
 
         <meta name="keywords" content="" />
         <meta name="description" content="">
         <meta name="author" content="">
+
+        <!-- =========================================
+        Pages Meta Section
+        ========================================== -->
 
         <?php if (isset($meta)) echo $meta; ?>
 

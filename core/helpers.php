@@ -6,7 +6,8 @@
  * @param mixed $var
  * @param bool  $pretty
  */
-function dd($var, $pretty = false) {
+function dd($var, $pretty = false)
+{
     $backtrace = debug_backtrace();
     echo "\n<pre>\n";
     if (isset($backtrace[0]['file'])) {

@@ -12,9 +12,9 @@ foreach ($dirs as $dir) {
 	}
 }
 
+#Se puede incluir mas directorios
 function autoload($class) {
 	include_once 'src/' . $class . '.php';
-	// include_once 'controllers/' . $class . '.php';
 }
 
 spl_autoload_register('autoload');

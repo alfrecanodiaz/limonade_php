@@ -1,6 +1,7 @@
 <?php
 
 require_once 'lib/limonade.php';
+require_once 'lib/rb.php';
 
 #Application code goes here
 

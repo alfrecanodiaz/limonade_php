@@ -5,7 +5,8 @@
 	| Application Environment
 	|--------------------------------------------------------------------------
 	| 
-	| Definir si la aplicación esta en modo producción o desarrollo (ENV_PRODUCTION, ENV_DEVELOPMENT)
+	| Definir si la aplicación esta en modo producción o desarrollo
+	| (ENV_PRODUCTION, ENV_DEVELOPMENT)
 	| Definir el modo debug de la aplicación para mostrar los errores generados
 	| 
 	*/

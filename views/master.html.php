@@ -30,6 +30,8 @@
         Global Css Section
         ========================================== -->
 
+        <?=Html::style('bootstrap.min.css');?>
+
         <!-- =========================================
         Pages Css Section
         ========================================== -->
@@ -51,6 +53,20 @@
     <!-- =========================================
     Global Scripts Section
     ========================================== -->
+
+    <?=Html::script('jquery-3.2.1.min.js');?>
+    <?=Html::script('bootstrap.min.js');?>
+
+    <script type="text/javascript">
+        $(document).ready(function()
+        {
+            $('input[type=checkbox]').change(function()
+            {
+                var value = this.checked ? 1 : 0;
+                $(this).val(value);
+            });    
+        });
+    </script>
 
     <!-- =========================================
     Pages Script Section

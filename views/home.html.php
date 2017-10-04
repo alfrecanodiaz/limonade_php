@@ -10,8 +10,6 @@
 
 <?php content_for('styles'); ?>
 
-<?=Html::style('bootstrap.min.css');?>
-
 <style type="text/css">
 	p {
 		color:red;
@@ -20,19 +18,26 @@
 
 <?php end_content_for(); ?>
 
-<h1><?php echo $saludo; ?></h1>
-
-<p>
-Return often to receive updates about the trials and tribulations
-surrounding raising my heart rate beyond 80bpm!
-</p>
-
-<button id="button">Button</button>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="text-center">
+				<h1><?php echo $saludo; ?></h1>
+			</div>
+			<div class="col-md-4">
+				<?php
+					echo Form::simpleInput('nombre', 'Nombre', null, ['data-send' => 'prueba data']);
+					echo Form::simpleTextarea('descripcion', 'Descripción');
+					echo Form::simpleCheckbox('estado', 'Estado', 1);
+					echo Form::simpleCheckbox('nuevo', 'Nuevo');
+					echo Form::simpleSelect('seleccion', 'Selecciones', $options, 2, ['class' => 'prueba', 'data-send' => 'send']);
+				?>
+			</div>
+		</div>
+	</div>
+</div>
 
 <?php content_for('scripts'); ?>
-
-<?=Html::script('jquery-3.2.1.min.js');?>
-<?=Html::script('bootstrap.min.js');?>
 
 <script type="text/javascript">
 	
